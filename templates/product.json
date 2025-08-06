@@ -68,6 +68,18 @@
             "show_gift_card_recipient": false
           }
         },
+        "double_links_LaGJUa": {
+          "type": "double_links",
+          "settings": {
+            "link_1_text": "Contact Us",
+            "link_1_url": "shopify://pages/contact",
+            "link_1_new_tab": false,
+            "link_2_text": "Call Us",
+            "link_2_url": "#",
+            "link_2_new_tab": false,
+            "link_style": "secondary"
+          }
+        },
         "icon_columns_B3Vfqa": {
           "type": "icon-columns",
           "settings": {
@@ -100,6 +112,7 @@
         "divider",
         "variant-picker",
         "buy-buttons",
+        "double_links_LaGJUa",
         "icon_columns_B3Vfqa"
       ],
       "settings": {
