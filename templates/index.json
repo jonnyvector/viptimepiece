@@ -103,7 +103,7 @@
       "settings": {
         "title": "",
         "media_aspect_ratio": "1",
-        "media_width": 70,
+        "media_width": 60,
         "text_alignment": "center",
         "button_style": "primary",
         "color_scheme": "default"
