@@ -84,7 +84,7 @@
       "settings": {
         "logo": "shopify://shop_images/Frame_3.svg",
         "logo_img_width_int": 120,
-        "mobile_logo_img_width_int": 135,
+        "mobile_logo_img_width_int": 80,
         "logo_h1": true,
         "enable_sticky": true,
         "enable_transparent": true,
