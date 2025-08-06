@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "scrolling_banner_zpcFdV": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "image_keEhkp": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_Gid6mx": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_4kAxwy": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_tzapRT": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_CRWz49": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_JJenGR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/rolex.svg",
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_Gqp4pM": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_U63yp9": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_MVWxFY": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_RJQCiH": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_RmTWTn": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_Tq8MKY": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_etiY9p": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "image_fYeTai": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_keEhkp",
+        "image_Gid6mx",
+        "image_4kAxwy",
+        "image_tzapRT",
+        "image_CRWz49",
+        "image_JJenGR",
+        "image_Gqp4pM",
+        "image_U63yp9",
+        "image_MVWxFY",
+        "image_RJQCiH",
+        "image_RmTWTn",
+        "image_Tq8MKY",
+        "image_etiY9p",
+        "image_fYeTai"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "color_scheme": "default",
+        "text_size": 50,
+        "vertical_padding": 40,
+        "speed": 0.5,
+        "direction": "left",
+        "font": "heading",
+        "space": 80
+      }
+    },
+    "cross-page-promos": {
+      "type": "cross-page-promos",
+      "blocks": {
+        "1478526632862": {
+          "type": "icon",
+          "settings": {
+            "icon": "truck",
+            "text": "Secure  shipping",
+            "link_url": ""
+          }
+        },
+        "1478526645605": {
+          "type": "icon",
+          "settings": {
+            "icon": "world",
+            "text": "Global Sourcing",
+            "link_url": ""
+          }
+        },
+        "1478526647261": {
+          "type": "icon",
+          "settings": {
+            "icon": "return",
+            "text": "Buyback Program",
+            "link_url": ""
+          }
+        },
+        "1478527611164": {
+          "type": "icon",
+          "settings": {
+            "icon": "award",
+            "text": "100% Authentic",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1478526632862",
+        "1478526645605",
+        "1478526647261",
+        "1478527611164"
+      ],
+      "settings": {
+        "cross_page_promo_bg": "#000000",
+        "cross_page_promo_color": "#ffffff",
+        "show_on_home_page": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "1601374680247": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your store",
+            "text": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "image": "{{ shop.brand.logo }}",
+            "image_width": 160,
+            "show_social_icons": true,
+            "soc_icons_large": false,
+            "enable_follow_on_shop": false
+          }
+        },
+        "1601374621546": {
+          "type": "menu",
+          "settings": {
+            "title": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "1601374580731": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Newsletter",
+            "text": "<p>Sign up for exclusive offers, original stories, events and more.</p>",
+            "button_style": "inherit",
+            "show_social_icons": false,
+            "soc_icons_large": false
+          }
+        }
+      },
+      "block_order": [
+        "1601374680247",
+        "1601374621546",
+        "1601374580731"
+      ],
+      "settings": {
+        "lower_menu": "",
+        "show_powered_by": true,
+        "show_payment_icons": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true
+      }
+    }
+  },
+  "order": [
+    "scrolling_banner_zpcFdV",
+    "cross-page-promos",
+    "footer"
+  ]
+}

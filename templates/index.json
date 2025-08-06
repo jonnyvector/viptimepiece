@@ -1,0 +1,392 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1617291721c3d3e73d": {
+      "type": "background-video",
+      "blocks": {
+        "f4f40ab9-fae9-4678-a2c6-87b948341ae0": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Audemars Piguet"
+          }
+        },
+        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3": {
+          "type": "heading",
+          "settings": {
+            "title": "Escape the Everyday",
+            "heading_max_width": 15,
+            "title_size": 48,
+            "title_size_mobile": 34,
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "f4f40ab9-fae9-4678-a2c6-87b948341ae0",
+        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3"
+      ],
+      "settings": {
+        "video_shopify": "shopify://files/videos/watch-video.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "text_alignment": "bottom left",
+        "height_desktop": 880,
+        "height_mobile": 520,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "multi_column_9mJjdi": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_igA4dx": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/guarantee_1.svg",
+            "title": "110% Guarantee",
+            "text": "<p>If you don't love your timepiece, we pay you.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_fBbyqw": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/lifetime_1.svg",
+            "title": "Lifetime Warranty",
+            "text": "<p>Each piece is guaranteed for life, we promise.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_JHKHnx": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/custom-sourcing_1.svg",
+            "title": "Custom Sourcing",
+            "text": "<p>Let us know what you're looking for, and we'll track it down for you.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_wqRGDt": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/buy-back_1.svg",
+            "title": "Buyback Program",
+            "text": "<p>We buy back watches that you want to let go of.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_igA4dx",
+        "text_block_fBbyqw",
+        "text_block_JHKHnx",
+        "text_block_wqRGDt"
+      ],
+      "custom_css": [],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 70,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "1480591889144": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "collection": "all",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": false,
+        "full_width": true
+      }
+    },
+    "logo_list_ADfK88": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_83J8ay": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/audemars.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_BDViEc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hublot.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_8fKGGf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/omega.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_NVQdqn": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/panerai.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_hHkG9P": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rolex.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_83J8ay",
+        "logo_BDViEc",
+        "logo_8fKGGf",
+        "logo_NVQdqn",
+        "logo_hHkG9P"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "Featured Brands",
+        "image_opacity": 75,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_g99hPx": {
+      "type": "gallery",
+      "blocks": {
+        "media_cgEiCz": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": true,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_ji9Nw7": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_F6xhTN": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_34yYaN": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": true,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_cgEiCz",
+        "media_ji9Nw7",
+        "media_F6xhTN",
+        "media_34yYaN"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "overlay_padding": "standard",
+        "button_style": "primary"
+      }
+    },
+    "16117511238528a364": {
+      "type": "testimonials",
+      "blocks": {
+        "16117511238528a364-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I have shopped here to buy swimsuits for my friends and they both love the fit and quality! I will definitely continue to come to this shop!",
+            "author": "Adele S, Toronto",
+            "image_caption": "Shop the Collection",
+            "link": ""
+          }
+        },
+        "16117511238528a364-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I have ordered from Chantilly Swimwear several times in the past. They always ship fast, and returns are easy. Fantastic selection of cute swimsuits and clothing!",
+            "author": "Izzy, London",
+            "image_caption": "Shop the Collection",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16117511238528a364-0",
+        "16117511238528a364-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "layout": "image-right",
+        "text_caps": false,
+        "quote_text_size": 28,
+        "quote_text_size_mobile": 20,
+        "image_shape": "square",
+        "color_scheme": "default",
+        "use_custom_star_rating_color": false,
+        "star_rating_color": "#bf570a",
+        "autoplay": true,
+        "autoplay_speed": 6
+      }
+    },
+    "0447c6d8-7e6b-47be-a617-8aa70b84a8af": {
+      "type": "key-features",
+      "blocks": {
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-1": {
+          "type": "feature",
+          "settings": {
+            "bg_color": "#f7f7f7",
+            "bg_gradient": "",
+            "text_color": "#232323",
+            "heading": "Sustainability as standard",
+            "text": "<p><strong>We are focused as a company on the idea of more eco and less ego.<br/></strong>The brands we feature have all paved the way for sustainability in swimwear, with their collections featuring a variety of textiles including recycled, organic, and plant-based fabrics.</p>",
+            "show_segments": false,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "leaf"
+          }
+        },
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-2": {
+          "type": "feature",
+          "settings": {
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#232323",
+            "heading": "Size Inclusive Swim",
+            "text": "<p><strong>We embrace all women, featuring sizes 6-24.</strong><br/>Inspired by exotic travel destinations and the bold colors of the beach, our swimwear designs  never go out of style. No matter your shape or size, there’s a selection of suits to find your perfect fit.</p>",
+            "show_segments": false,
+            "segments": 5,
+            "active_segment": "2",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "heart"
+          }
+        },
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-3": {
+          "type": "feature",
+          "settings": {
+            "bg_color": "#f7f7f7",
+            "bg_gradient": "",
+            "text_color": "#232323",
+            "heading": "Run for women, by women.",
+            "text": "<p><strong>A warm environment where instead of feeling self-conscious she feels secure in her own body.</strong><br/>Not limited by age, size or shape, wearing swimwear that fits, feels good, and frees her to be the woman she’s meant to be.</p>",
+            "show_segments": false,
+            "segments": 5,
+            "active_segment": "3",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-1",
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-2",
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-3"
+      ],
+      "settings": {
+        "heading": "Our Values",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1.5",
+        "image_position": "left",
+        "segment_position": "over-text"
+      }
+    }
+  },
+  "order": [
+    "1617291721c3d3e73d",
+    "multi_column_9mJjdi",
+    "1480591889144",
+    "gallery_g99hPx",
+    "logo_list_ADfK88",
+    "16117511238528a364",
+    "0447c6d8-7e6b-47be-a617-8aa70b84a8af"
+  ]
+}
