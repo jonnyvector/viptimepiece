@@ -625,6 +625,22 @@
               </div>
             {% endif %}
 
+            {% when 'double_links' %}
+              <div class="lightly-spaced-row double-links" {{ block.shopify_attributes }}>
+                {% if block.settings.link_1_text != blank and block.settings.link_1_url != blank %}
+                  <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_1_url }}"{% if block.settings.link_1_new_tab %} target="_blank"{% endif %}>
+                    {{ block.settings.link_1_text | escape }}
+                  </a>
+                {% endif %}
+                
+                {% if block.settings.link_2_text != blank and block.settings.link_2_url != blank %}
+                  <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_2_url }}"{% if block.settings.link_2_new_tab %} target="_blank"{% endif %}>
+                    {{ block.settings.link_2_text | escape }}
+                  </a>
+                {% endif %}
+              </div>
+            
+
           {% when 'image' %}
             {% if block.settings.image != blank %}
               <div class="lightly-spaced-row inline-width-container{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" style="width: {{ block.settings.image_width }}px" {{ block.shopify_attributes }}>
@@ -2657,6 +2673,55 @@
         }
       ]
     },
+      {
+    "type": "double_links",
+    "name": "Double Links",
+    "settings": [
+      {
+        "type": "text",
+        "id": "link_1_text",
+        "label": "First Link Text"
+      },
+      {
+        "type": "url",
+        "id": "link_1_url",
+        "label": "First Link URL"
+      },
+      {
+        "type": "checkbox",
+        "id": "link_1_new_tab",
+        "label": "Open First Link in New Tab",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "link_2_text",
+        "label": "Second Link Text"
+      },
+      {
+        "type": "url",
+        "id": "link_2_url",
+        "label": "Second Link URL"
+      },
+      {
+        "type": "checkbox",
+        "id": "link_2_new_tab",
+        "label": "Open Second Link in New Tab",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "link_style",
+        "label": "Link Style",
+        "default": "secondary",
+        "options": [
+          { "value": "primary", "label": "Primary Button" },
+          { "value": "secondary", "label": "Secondary Button" },
+          { "value": "link", "label": "Text Link" }
+        ]
+      }
+    ]
+  },
     {
       "type": "image",
       "name": "Image",
