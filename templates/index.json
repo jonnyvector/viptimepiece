@@ -123,69 +123,6 @@
         "full_width": true
       }
     },
-    "logo_list_ADfK88": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_83J8ay": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/audemars.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_BDViEc": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/hublot.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_8fKGGf": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/omega.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_NVQdqn": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/panerai.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_hHkG9P": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/rolex.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_83J8ay",
-        "logo_BDViEc",
-        "logo_8fKGGf",
-        "logo_NVQdqn",
-        "logo_hHkG9P"
-      ],
-      "name": "Logo list",
-      "settings": {
-        "title": "Featured Brands",
-        "image_opacity": 75,
-        "color_scheme": "default"
-      }
-    },
     "gallery_g99hPx": {
       "type": "gallery",
       "blocks": {
@@ -257,6 +194,69 @@
         "overlay_style": "full",
         "overlay_padding": "standard",
         "button_style": "primary"
+      }
+    },
+    "logo_list_ADfK88": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_83J8ay": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/audemars_7ab3e422-0736-4d04-b3da-0d58e076aad3.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_BDViEc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hublot_9b7ba771-764b-4d9c-962c-5f1d905cacbd.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_8fKGGf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/omega_741d9aee-7b6d-4a2e-bcb4-cdc18d089145.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_NVQdqn": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/panerai.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_hHkG9P": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rolex_cc7fc76a-f98d-45ac-b71f-205d396c6d32.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_83J8ay",
+        "logo_BDViEc",
+        "logo_8fKGGf",
+        "logo_NVQdqn",
+        "logo_hHkG9P"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "Featured Brands",
+        "image_opacity": 75,
+        "color_scheme": "default"
       }
     },
     "16117511238528a364": {
