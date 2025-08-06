@@ -53,6 +53,52 @@
         "overlay_style": "full image-overlay--bg-shadow"
       }
     },
+    "image_with_text_overlay_zGTnwW": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_WdbAWK": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_LQbKCK": {
+          "type": "heading",
+          "settings": {
+            "title": "Exclusive Luxury for Sophisticated Style",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_iAfy9W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover, collect, and trade the world’s finest timepieces.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WdbAWK",
+        "heading_LQbKCK",
+        "text_iAfy9W"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/a-macro-close-up-of-a-high-end-luxury-watch-dial.png",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
     "ffca7f3f-a70e-4737-9485-80d1f269e72b": {
       "type": "rich-text",
       "blocks": {
@@ -83,6 +129,7 @@
         "template--15213462618185__ffca7f3f-a70e-4737-9485-80d1f269e72b-heading-1",
         "template--15213462618185__ffca7f3f-a70e-4737-9485-80d1f269e72b-text-1"
       ],
+      "disabled": true,
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -267,6 +314,7 @@
   "order": [
     "main",
     "cdffcd03-a94b-4d6e-a504-1fe0b70347d6",
+    "image_with_text_overlay_zGTnwW",
     "ffca7f3f-a70e-4737-9485-80d1f269e72b",
     "image_with_text_mmtVBA",
     "image_with_text_4JErBq",
