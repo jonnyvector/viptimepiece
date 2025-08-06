@@ -124,6 +124,7 @@
       ],
       "name": "Image with text",
       "settings": {
+        "image": "shopify://shop_images/a-luxury-watchmaker-inspecting-the-intricate-mecha.png",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -165,6 +166,7 @@
       ],
       "name": "Image with text",
       "settings": {
+        "image": "shopify://shop_images/an-elegant-flat-lay-of-a-luxury-wristwatch-placed.png",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -206,6 +208,7 @@
       ],
       "name": "Image with text",
       "settings": {
+        "image": "shopify://shop_images/a-luxury-client-consultation-in-a-modern-private-o.png",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
