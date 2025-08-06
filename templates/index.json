@@ -44,6 +44,69 @@
         "overlay_style": "shadow"
       }
     },
+    "logo_list_ADfK88": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_83J8ay": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/audemars_7ab3e422-0736-4d04-b3da-0d58e076aad3.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_BDViEc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hublot_9b7ba771-764b-4d9c-962c-5f1d905cacbd.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_8fKGGf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/omega_741d9aee-7b6d-4a2e-bcb4-cdc18d089145.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_NVQdqn": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/panerai.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_hHkG9P": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rolex_cc7fc76a-f98d-45ac-b71f-205d396c6d32.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_83J8ay",
+        "logo_BDViEc",
+        "logo_8fKGGf",
+        "logo_NVQdqn",
+        "logo_hHkG9P"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "Featured Brands",
+        "image_opacity": 75,
+        "color_scheme": "default"
+      }
+    },
     "multi_column_9mJjdi": {
       "type": "multi-column",
       "blocks": {
@@ -124,6 +187,86 @@
         "full_width": true
       }
     },
+    "0447c6d8-7e6b-47be-a617-8aa70b84a8af": {
+      "type": "key-features",
+      "blocks": {
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/imgi_5_kriescher_rolex_0011.jpg",
+            "bg_color": "#f7f7f7",
+            "bg_gradient": "",
+            "text_color": "#232323",
+            "heading": "Uncompromising Trust",
+            "text": "<p>At VIP Timepiece, integrity is everything. Every watch we curate is backed by our <strong>110% money-back guarantee</strong> and <strong>lifetime warranty</strong>, ensuring complete peace of mind for every purchase.</p>",
+            "show_segments": false,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "leaf"
+          }
+        },
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/imgi_26_MicrosoftTeams-image-77.jpg",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#232323",
+            "heading": "Personalized Luxury",
+            "text": "<p>We believe true luxury is personal. From custom sourcing rare timepieces to offering a dedicated buyback program, our goal is to deliver a <strong>seamless, tailored experience</strong> for every client.</p>",
+            "show_segments": false,
+            "segments": 5,
+            "active_segment": "2",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "heart"
+          }
+        },
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/imgi_18_zRolex-Datejust-126233---131110s.jpg",
+            "bg_color": "#f7f7f7",
+            "bg_gradient": "",
+            "text_color": "#232323",
+            "heading": "Modern Elegance",
+            "text": "<p>Blending timeless craftsmanship with <strong>modern sophistication</strong>, VIP Timepiece is inspired by the world’s most exclusive brands — from Ritz-Carlton to McLaren — creating an experience that reflects <strong>excellence, precision, and style</strong>.</p>",
+            "show_segments": false,
+            "segments": 5,
+            "active_segment": "3",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-1",
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-2",
+        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-3"
+      ],
+      "settings": {
+        "heading": "Our Values",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1.5",
+        "image_position": "left",
+        "segment_position": "over-text"
+      }
+    },
     "gallery_g99hPx": {
       "type": "gallery",
       "blocks": {
@@ -197,69 +340,6 @@
         "button_style": "primary"
       }
     },
-    "logo_list_ADfK88": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_83J8ay": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/audemars_7ab3e422-0736-4d04-b3da-0d58e076aad3.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_BDViEc": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/hublot_9b7ba771-764b-4d9c-962c-5f1d905cacbd.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_8fKGGf": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/omega_741d9aee-7b6d-4a2e-bcb4-cdc18d089145.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_NVQdqn": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/panerai.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_hHkG9P": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/rolex_cc7fc76a-f98d-45ac-b71f-205d396c6d32.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_83J8ay",
-        "logo_BDViEc",
-        "logo_8fKGGf",
-        "logo_NVQdqn",
-        "logo_hHkG9P"
-      ],
-      "name": "Logo list",
-      "settings": {
-        "title": "Featured Brands",
-        "image_opacity": 75,
-        "color_scheme": "default"
-      }
-    },
     "16117511238528a364": {
       "type": "testimonials",
       "blocks": {
@@ -301,83 +381,6 @@
         "star_rating_color": "#bf570a",
         "autoplay": true,
         "autoplay_speed": 6
-      }
-    },
-    "0447c6d8-7e6b-47be-a617-8aa70b84a8af": {
-      "type": "key-features",
-      "blocks": {
-        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-1": {
-          "type": "feature",
-          "settings": {
-            "bg_color": "#f7f7f7",
-            "bg_gradient": "",
-            "text_color": "#232323",
-            "heading": "Uncompromising Trust",
-            "text": "<p>At VIP Timepiece, integrity is everything. Every watch we curate is backed by our <strong>110% money-back guarantee</strong> and <strong>lifetime warranty</strong>, ensuring complete peace of mind for every purchase.</p>",
-            "show_segments": false,
-            "segments": 5,
-            "active_segment": "4",
-            "fill_segments": true,
-            "show_labels": true,
-            "label_left": "",
-            "label_middle": "",
-            "label_right": "",
-            "show_icon": false,
-            "icon": "leaf"
-          }
-        },
-        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-2": {
-          "type": "feature",
-          "settings": {
-            "bg_color": "#ffffff",
-            "bg_gradient": "",
-            "text_color": "#232323",
-            "heading": "Personalized Luxury",
-            "text": "<p>We believe true luxury is personal. From custom sourcing rare timepieces to offering a dedicated buyback program, our goal is to deliver a <strong>seamless, tailored experience</strong> for every client.</p>",
-            "show_segments": false,
-            "segments": 5,
-            "active_segment": "2",
-            "fill_segments": true,
-            "show_labels": true,
-            "label_left": "",
-            "label_middle": "",
-            "label_right": "",
-            "show_icon": false,
-            "icon": "heart"
-          }
-        },
-        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-3": {
-          "type": "feature",
-          "settings": {
-            "bg_color": "#f7f7f7",
-            "bg_gradient": "",
-            "text_color": "#232323",
-            "heading": "Modern Elegance",
-            "text": "<p>Blending timeless craftsmanship with <strong>modern sophistication</strong>, VIP Timepiece is inspired by the world’s most exclusive brands — from Ritz-Carlton to McLaren — creating an experience that reflects <strong>excellence, precision, and style</strong>.</p>",
-            "show_segments": false,
-            "segments": 5,
-            "active_segment": "3",
-            "fill_segments": true,
-            "show_labels": true,
-            "label_left": "",
-            "label_middle": "",
-            "label_right": "",
-            "show_icon": false,
-            "icon": "star"
-          }
-        }
-      },
-      "block_order": [
-        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-1",
-        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-2",
-        "template--20584145715223__0447c6d8-7e6b-47be-a617-8aa70b84a8af-feature-3"
-      ],
-      "settings": {
-        "heading": "Our Values",
-        "image_max_width": 700,
-        "media_aspect_ratio": "1.5",
-        "image_position": "left",
-        "segment_position": "over-text"
       }
     }
   },
