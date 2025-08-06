@@ -1,0 +1,13 @@
+{
+  "name": "viptimepiece",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "shopify theme dev --store=viptimepiece.myshopify.com --theme=180236386621"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
