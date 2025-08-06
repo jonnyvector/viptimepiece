@@ -98,6 +98,7 @@
         "text_block_JHKHnx",
         "text_block_wqRGDt"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "Multi-column",
       "settings": {
@@ -382,11 +383,11 @@
   },
   "order": [
     "1617291721c3d3e73d",
+    "logo_list_ADfK88",
     "multi_column_9mJjdi",
     "1480591889144",
+    "0447c6d8-7e6b-47be-a617-8aa70b84a8af",
     "gallery_g99hPx",
-    "logo_list_ADfK88",
-    "16117511238528a364",
-    "0447c6d8-7e6b-47be-a617-8aa70b84a8af"
+    "16117511238528a364"
   ]
 }
