@@ -92,6 +92,7 @@
     "prod_stock_warn_show": true,
     "prod_stock_warn_limit_int": 0,
     "prod_new_show": true,
+    "prod_new_method": "collection",
     "prod_sale_show": false,
     "prod_sold_out_show": true,
     "enable_product_reviews_collection": true,

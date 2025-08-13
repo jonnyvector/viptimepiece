@@ -178,7 +178,7 @@
       "settings": {
         "title": "New Arrivals",
         "collection": "all",
-        "show_vendor": false,
+        "show_vendor": true,
         "enable_carousel": true,
         "grid": 4,
         "rows": 1,
