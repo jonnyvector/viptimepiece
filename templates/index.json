@@ -52,7 +52,7 @@
           "settings": {
             "image": "shopify://shop_images/audemars_7ab3e422-0736-4d04-b3da-0d58e076aad3.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/audemars-piguet",
             "title": ""
           }
         },
@@ -61,7 +61,7 @@
           "settings": {
             "image": "shopify://shop_images/hublot_9b7ba771-764b-4d9c-962c-5f1d905cacbd.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/hublot",
             "title": ""
           }
         },
