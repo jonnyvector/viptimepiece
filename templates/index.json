@@ -70,7 +70,7 @@
           "settings": {
             "image": "shopify://shop_images/omega_741d9aee-7b6d-4a2e-bcb4-cdc18d089145.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/omega",
             "title": ""
           }
         },
@@ -88,7 +88,7 @@
           "settings": {
             "image": "shopify://shop_images/rolex_cc7fc76a-f98d-45ac-b71f-205d396c6d32.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/omega",
             "title": ""
           }
         }
