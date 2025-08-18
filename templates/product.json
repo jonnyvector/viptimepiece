@@ -71,15 +71,6 @@
             "link_style": "secondary"
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "show_in_tab": false,
-            "open_tab": false,
-            "icon": "",
-            "show_in_quickbuy": false
-          }
-        },
         "icon_columns_B3Vfqa": {
           "type": "icon-columns",
           "settings": {
@@ -101,6 +92,15 @@
             "icon_3_text": "Multiple secure payment options",
             "show_in_quickbuy": false
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
         }
       },
       "block_order": [
@@ -112,8 +112,8 @@
         "variant-picker",
         "buy-buttons",
         "double_links_LaGJUa",
-        "description",
-        "icon_columns_B3Vfqa"
+        "icon_columns_B3Vfqa",
+        "description"
       ],
       "settings": {
         "show_breadcrumbs": true,
