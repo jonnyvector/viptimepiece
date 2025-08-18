@@ -121,9 +121,7 @@
           }
         }
       },
-      "block_order": [
-        "message_ey38Gx"
-      ],
+      "block_order": ["message_ey38Gx"],
       "disabled": true,
       "settings": {
         "head_not_home_only": false,
@@ -136,9 +134,5 @@
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header",
-    "store-messages"
-  ]
+  "order": ["announcement-bar", "header", "store-messages"]
 }

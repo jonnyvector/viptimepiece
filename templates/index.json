@@ -61,7 +61,7 @@
           "settings": {
             "image": "shopify://shop_images/audemars_7ab3e422-0736-4d04-b3da-0d58e076aad3.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/audemars-piguet",
             "title": ""
           }
         },
@@ -70,7 +70,7 @@
           "settings": {
             "image": "shopify://shop_images/hublot_9b7ba771-764b-4d9c-962c-5f1d905cacbd.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/hublot",
             "title": ""
           }
         },
@@ -79,7 +79,7 @@
           "settings": {
             "image": "shopify://shop_images/omega_741d9aee-7b6d-4a2e-bcb4-cdc18d089145.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/omega",
             "title": ""
           }
         },
@@ -97,7 +97,7 @@
           "settings": {
             "image": "shopify://shop_images/rolex_cc7fc76a-f98d-45ac-b71f-205d396c6d32.svg",
             "image_width": 160,
-            "link": "",
+            "link": "shopify://collections/omega",
             "title": ""
           }
         }
@@ -121,7 +121,7 @@
       "settings": {
         "title": "New Arrivals",
         "collection": "all",
-        "show_vendor": false,
+        "show_vendor": true,
         "enable_carousel": true,
         "grid": 4,
         "rows": 1,

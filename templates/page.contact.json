@@ -43,6 +43,14 @@
             "half_width": true
           }
         },
+        "custom_dropdown_9yVwVF": {
+          "type": "custom_dropdown",
+          "settings": {
+            "title": "Reason For Contacting Us",
+            "multiple_options": "Question about a piece\nSourcing a piece\nGeneral inquiry",
+            "half_width": false
+          }
+        },
         "message": {
           "type": "message_input",
           "settings": {
@@ -55,6 +63,7 @@
         "custom_input_HGfXxR",
         "email",
         "phone_input_dLMFHL",
+        "custom_dropdown_9yVwVF",
         "message"
       ],
       "settings": {
