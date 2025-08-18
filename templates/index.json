@@ -103,7 +103,7 @@
       "name": "Logo list",
       "settings": {
         "title": "Featured Brands",
-        "image_opacity": 75,
+        "image_opacity": 80,
         "color_scheme": "default"
       }
     },
