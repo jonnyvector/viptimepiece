@@ -207,6 +207,7 @@
         "media_cgEiCz": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/audemars_2.png",
             "enlarge_media": true,
             "subheading": "",
             "title": "Audemars Piguet",
@@ -218,6 +219,7 @@
         "media_ji9Nw7": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/rolex_2.png",
             "enlarge_media": false,
             "subheading": "",
             "title": "Rolex",
@@ -229,6 +231,7 @@
         "media_F6xhTN": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/hublot_3.png",
             "enlarge_media": false,
             "subheading": "",
             "title": "Hublot",
@@ -240,6 +243,7 @@
         "media_34yYaN": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/omega_3.png",
             "enlarge_media": true,
             "subheading": "",
             "title": "Omega",
