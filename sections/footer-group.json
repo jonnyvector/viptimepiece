@@ -196,7 +196,7 @@
         "1601374680247": {
           "type": "text",
           "settings": {
-            "title": "Talk about your store",
+            "title": "VIP Timepiece",
             "text": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
             "image": "{{ shop.brand.logo }}",
             "image_width": 160,
