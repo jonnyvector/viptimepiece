@@ -12,9 +12,21 @@
     "main": {
       "type": "main-contact",
       "blocks": {
-        "name": {
-          "type": "name_input",
+        "custom_input_XXMJtb": {
+          "type": "custom_input",
           "settings": {
+            "title": "First Name",
+            "type": "text",
+            "required": false,
+            "half_width": true
+          }
+        },
+        "custom_input_HGfXxR": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Last Name",
+            "type": "text",
+            "required": false,
             "half_width": true
           }
         },
@@ -24,17 +36,33 @@
             "half_width": true
           }
         },
+        "phone_input_dLMFHL": {
+          "type": "phone_input",
+          "settings": {
+            "required": false,
+            "half_width": true
+          }
+        },
         "message": {
           "type": "message_input",
-          "settings": {}
+          "settings": {
+            "half_width": false
+          }
         }
       },
       "block_order": [
-        "name",
+        "custom_input_XXMJtb",
+        "custom_input_HGfXxR",
         "email",
+        "phone_input_dLMFHL",
         "message"
       ],
-      "settings": {}
+      "settings": {
+        "show_page_title": true,
+        "use_columns": true,
+        "contact_title": "Contact us",
+        "contact_text": ""
+      }
     }
   },
   "order": [

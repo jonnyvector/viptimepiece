@@ -15,7 +15,7 @@
         "f4f40ab9-fae9-4678-a2c6-87b948341ae0": {
           "type": "subheading",
           "settings": {
-            "subheading": "Audemars Piguet"
+            "subheading": "Hublot"
           }
         },
         "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3": {
@@ -27,14 +27,23 @@
             "title_size_mobile": 34,
             "use_h1": false
           }
+        },
+        "button_RCMPez": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/hublot",
+            "button_style": "secondary"
+          }
         }
       },
       "block_order": [
         "f4f40ab9-fae9-4678-a2c6-87b948341ae0",
-        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3"
+        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3",
+        "button_RCMPez"
       ],
       "settings": {
-        "video_shopify": "shopify://files/videos/watch-video.mp4",
+        "video_shopify": "shopify://files/videos/891195d9-c99e-455d-83e5-98ce353e822b.mp4 (1).mp4",
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
         "text_alignment": "bottom left",
@@ -103,73 +112,7 @@
       "name": "Logo list",
       "settings": {
         "title": "Featured Brands",
-        "image_opacity": 75,
-        "color_scheme": "default"
-      }
-    },
-    "multi_column_9mJjdi": {
-      "type": "multi-column",
-      "blocks": {
-        "text_block_igA4dx": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/guarantee_1.svg",
-            "title": "110% Guarantee",
-            "text": "<p>If you don't love your timepiece, we pay you.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_fBbyqw": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/lifetime_1.svg",
-            "title": "Lifetime Warranty",
-            "text": "<p>Each piece is guaranteed for life, we promise.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_JHKHnx": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/custom-sourcing_1.svg",
-            "title": "Custom Sourcing",
-            "text": "<p>Let us know what you're looking for, and we'll track it down for you.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_wqRGDt": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/buy-back_1.svg",
-            "title": "Buyback Program",
-            "text": "<p>We buy back watches that you want to let go of.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_igA4dx",
-        "text_block_fBbyqw",
-        "text_block_JHKHnx",
-        "text_block_wqRGDt"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "name": "Multi-column",
-      "settings": {
-        "title": "",
-        "media_aspect_ratio": "1",
-        "media_width": 60,
-        "text_alignment": "center",
-        "button_style": "primary",
+        "image_opacity": 80,
         "color_scheme": "default"
       }
     },
@@ -273,44 +216,49 @@
         "media_cgEiCz": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/audemars_2.png",
             "enlarge_media": true,
-            "subheading": "Gallery",
-            "title": "Tell your story",
+            "subheading": "",
+            "title": "Audemars Piguet",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/audemars-piguet",
             "text_alignment": "bottom left"
           }
         },
         "media_ji9Nw7": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/rolex_2.png",
             "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
+            "subheading": "",
+            "title": "Rolex",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/rolex",
             "text_alignment": "bottom left"
           }
         },
         "media_F6xhTN": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/hublot_3.png",
             "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
+            "subheading": "",
+            "title": "Hublot",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/hublot",
             "text_alignment": "bottom left"
           }
         },
         "media_34yYaN": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/omega_3.png",
+            "video_shopify": "shopify://files/videos/11965361-uhd_3840_2160_24fps.mp4",
             "enlarge_media": true,
-            "subheading": "Gallery",
-            "title": "Tell your story",
+            "subheading": "",
+            "title": "Omega",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/omega",
             "text_alignment": "bottom left"
           }
         }
@@ -382,15 +330,81 @@
         "autoplay": true,
         "autoplay_speed": 6
       }
+    },
+    "multi_column_9mJjdi": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_igA4dx": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/guarantee_1.svg",
+            "title": "110% Guarantee",
+            "text": "<p>If you don't love your timepiece, we pay you.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_fBbyqw": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/lifetime_1.svg",
+            "title": "Lifetime Warranty",
+            "text": "<p>Each piece is guaranteed for life, we promise.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_JHKHnx": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/custom-sourcing_1.svg",
+            "title": "Custom Sourcing",
+            "text": "<p>Let us know what you're looking for, and we'll track it down for you.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_wqRGDt": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/buy-back_1.svg",
+            "title": "Buyback Program",
+            "text": "<p>We buy back watches that you want to let go of.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_igA4dx",
+        "text_block_fBbyqw",
+        "text_block_JHKHnx",
+        "text_block_wqRGDt"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 60,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
     }
   },
   "order": [
     "1617291721c3d3e73d",
     "logo_list_ADfK88",
-    "multi_column_9mJjdi",
     "1480591889144",
     "0447c6d8-7e6b-47be-a617-8aa70b84a8af",
     "gallery_g99hPx",
-    "16117511238528a364"
+    "16117511238528a364",
+    "multi_column_9mJjdi"
   ]
 }

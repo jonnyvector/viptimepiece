@@ -83,7 +83,7 @@
       "type": "header",
       "settings": {
         "logo": "shopify://shop_images/Frame_3.svg",
-        "logo_img_width_int": 120,
+        "logo_img_width_int": 100,
         "mobile_logo_img_width_int": 80,
         "logo_h1": true,
         "enable_sticky": true,
@@ -120,9 +120,7 @@
           }
         }
       },
-      "block_order": [
-        "message_ey38Gx"
-      ],
+      "block_order": ["message_ey38Gx"],
       "disabled": true,
       "settings": {
         "head_not_home_only": false,
@@ -135,9 +133,5 @@
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header",
-    "store-messages"
-  ]
+  "order": ["announcement-bar", "header", "store-messages"]
 }

@@ -290,7 +290,7 @@
         "button_9YkxYc": {
           "type": "button",
           "settings": {
-            "button_label": "Contact",
+            "button_label": "Contact US",
             "button_link": "shopify://pages/contact",
             "button_style": "primary"
           }
@@ -307,7 +307,7 @@
         "height": "medium",
         "text_alignment": "center",
         "full_width": false,
-        "color_scheme": "default"
+        "color_scheme": "1"
       }
     }
   },
