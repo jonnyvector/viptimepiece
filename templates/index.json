@@ -109,25 +109,6 @@
         "color_scheme": "default"
       }
     },
-    "175548880349aef703": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_f1b2ed5_XNzTfr": {
-          "type": "ai_gen_block_f1b2ed5",
-          "settings": {
-            "padding_top_desktop": 60,
-            "padding_bottom_desktop": 60,
-            "padding_top_mobile": 40,
-            "padding_bottom_mobile": 40
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_f1b2ed5_XNzTfr"
-      ],
-      "settings": {}
-    },
     "1480591889144": {
       "type": "featured-collection",
       "settings": {
@@ -405,7 +386,6 @@
   "order": [
     "1617291721c3d3e73d",
     "multi_column_9mJjdi",
-    "175548880349aef703",
     "1480591889144",
     "logo_list_ADfK88",
     "0447c6d8-7e6b-47be-a617-8aa70b84a8af",
