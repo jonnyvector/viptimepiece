@@ -31,15 +31,6 @@
           "type": "vendor",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "show_in_tab": false,
-            "open_tab": false,
-            "icon": "",
-            "show_in_quickbuy": false
-          }
-        },
         "divider": {
           "type": "divider",
           "settings": {
@@ -80,6 +71,15 @@
             "link_style": "secondary"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
         "icon_columns_B3Vfqa": {
           "type": "icon-columns",
           "settings": {
@@ -108,11 +108,11 @@
         "sku_xqXaww",
         "price",
         "vendor",
-        "description",
         "divider",
         "variant-picker",
         "buy-buttons",
         "double_links_LaGJUa",
+        "description",
         "icon_columns_B3Vfqa"
       ],
       "settings": {
