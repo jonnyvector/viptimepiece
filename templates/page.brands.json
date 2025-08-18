@@ -126,7 +126,7 @@
       "settings": {
         "title": "Brands",
         "enable_carousel": false,
-        "grid": 3,
+        "grid": 4,
         "color_scheme": "default",
         "full_width": true,
         "coll_grid_image_shape": "square",
