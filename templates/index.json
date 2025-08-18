@@ -15,7 +15,7 @@
         "f4f40ab9-fae9-4678-a2c6-87b948341ae0": {
           "type": "subheading",
           "settings": {
-            "subheading": "Audemars Piguet"
+            "subheading": "Hublot"
           }
         },
         "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3": {
@@ -27,14 +27,23 @@
             "title_size_mobile": 34,
             "use_h1": false
           }
+        },
+        "button_RCMPez": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/hublot",
+            "button_style": "secondary"
+          }
         }
       },
       "block_order": [
         "f4f40ab9-fae9-4678-a2c6-87b948341ae0",
-        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3"
+        "b9c3b2b8-6b3d-4a55-8343-a6742af1b4f3",
+        "button_RCMPez"
       ],
       "settings": {
-        "video_shopify": "shopify://files/videos/11965361-uhd_3840_2160_24fps.mp4",
+        "video_shopify": "shopify://files/videos/891195d9-c99e-455d-83e5-98ce353e822b.mp4.mp4",
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
         "text_alignment": "bottom left",
