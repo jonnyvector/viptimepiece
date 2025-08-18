@@ -68,6 +68,7 @@
         "ab92b476-2d4e-4c0c-991e-4f528236c2d9",
         "779702cf-d8cf-4f96-b433-b424480b158b"
       ],
+      "disabled": true,
       "settings": {
         "message_font_size": 12,
         "announcement_bar_col": "#232323",
