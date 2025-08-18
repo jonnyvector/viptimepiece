@@ -212,7 +212,7 @@
             "subheading": "",
             "title": "Audemars Piguet",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/audemars-piguet",
             "text_alignment": "bottom left"
           }
         },
@@ -224,7 +224,7 @@
             "subheading": "",
             "title": "Rolex",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/rolex",
             "text_alignment": "bottom left"
           }
         },
@@ -244,6 +244,7 @@
           "type": "media",
           "settings": {
             "image": "shopify://shop_images/omega_3.png",
+            "video_shopify": "shopify://files/videos/11965361-uhd_3840_2160_24fps.mp4",
             "enlarge_media": true,
             "subheading": "",
             "title": "Omega",
