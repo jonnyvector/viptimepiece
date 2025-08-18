@@ -236,7 +236,7 @@
             "subheading": "",
             "title": "Hublot",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/hublot",
             "text_alignment": "bottom left"
           }
         },
@@ -249,7 +249,7 @@
             "subheading": "",
             "title": "Omega",
             "button_label": "",
-            "link": "",
+            "link": "shopify://collections/omega",
             "text_alignment": "bottom left"
           }
         }
