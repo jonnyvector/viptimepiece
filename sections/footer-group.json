@@ -205,6 +205,13 @@
             "enable_follow_on_shop": false
           }
         },
+        "menu_HaJE64": {
+          "type": "menu",
+          "settings": {
+            "title": "Information",
+            "menu": "information"
+          }
+        },
         "1601374621546": {
           "type": "menu",
           "settings": {
@@ -225,6 +232,7 @@
       },
       "block_order": [
         "1601374680247",
+        "menu_HaJE64",
         "1601374621546",
         "1601374580731"
       ],
