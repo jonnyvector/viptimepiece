@@ -148,31 +148,48 @@
     "rich_text_LyPJBj": {
       "type": "rich-text",
       "blocks": {
+        "icon_hHqc7z": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble",
+            "icon_color": "rgba(0,0,0,0)"
+          }
+        },
         "heading_BxCkEA": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
+            "title": "Have any questions?",
             "use_h1": false
           }
         },
         "text_AeJqc8": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Our team is always ready to help with any inquiries you may have.</p>",
             "enlarge_text": true
+          }
+        },
+        "button_e9hwpk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact US",
+            "button_link": "shopify://pages/contact",
+            "button_style": "primary"
           }
         }
       },
       "block_order": [
+        "icon_hHqc7z",
         "heading_BxCkEA",
-        "text_AeJqc8"
+        "text_AeJqc8",
+        "button_e9hwpk"
       ],
       "name": "Rich text",
       "settings": {
         "height": "medium",
         "text_alignment": "center",
         "full_width": false,
-        "color_scheme": "default"
+        "color_scheme": "1"
       }
     },
     "image_with_text_overlay_n89KNA": {
@@ -217,8 +234,10 @@
         "text_czD6hT",
         "button_79bhYM"
       ],
+      "disabled": true,
       "name": "Image with text overlay",
       "settings": {
+        "image": "shopify://shop_images/m-z1f3d6_w7dA-unsplash.jpg",
         "height": "fixed",
         "height_desktop": 460,
         "height_mobile": 460,
