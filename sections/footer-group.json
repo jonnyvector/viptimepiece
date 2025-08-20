@@ -149,23 +149,15 @@
           "type": "icon",
           "settings": {
             "icon": "truck",
-            "text": "Secure  shipping",
+            "text": "Fast  shipping",
             "link_url": ""
           }
         },
         "1478526645605": {
           "type": "icon",
           "settings": {
-            "icon": "world",
-            "text": "Global Sourcing",
-            "link_url": ""
-          }
-        },
-        "1478526647261": {
-          "type": "icon",
-          "settings": {
-            "icon": "return",
-            "text": "Buyback Program",
+            "icon": "credit_card",
+            "text": "Secure Payments",
             "link_url": ""
           }
         },
@@ -176,13 +168,21 @@
             "text": "100% Authentic",
             "link_url": ""
           }
+        },
+        "1478526647261": {
+          "type": "icon",
+          "settings": {
+            "icon": "return",
+            "text": "Buyback Program",
+            "link_url": ""
+          }
         }
       },
       "block_order": [
         "1478526632862",
         "1478526645605",
-        "1478526647261",
-        "1478527611164"
+        "1478527611164",
+        "1478526647261"
       ],
       "settings": {
         "cross_page_promo_bg": "#000000",
