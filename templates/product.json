@@ -144,10 +144,96 @@
         "show_vendor": false,
         "grid": 4
       }
+    },
+    "rich_text_LyPJBj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BxCkEA": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        },
+        "text_AeJqc8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_BxCkEA",
+        "text_AeJqc8"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_n89KNA": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_Xt38xp": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_6GABF4": {
+          "type": "heading",
+          "settings": {
+            "title": "Have any questions?",
+            "heading_max_width": 15,
+            "title_size": 64,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_czD6hT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_79bhYM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Xt38xp",
+        "heading_6GABF4",
+        "text_czD6hT",
+        "button_79bhYM"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 460,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "rich_text_LyPJBj",
+    "image_with_text_overlay_n89KNA"
   ]
 }
