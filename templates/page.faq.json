@@ -35,6 +35,7 @@
         "text"
       ],
       "settings": {
+        "image": "shopify://shop_images/pexels-quang-viet-nguyen-107013384-9561300_1.jpg",
         "height": "fixed",
         "height_desktop": 400,
         "height_mobile": 300,
@@ -54,32 +55,6 @@
         "show_search": true,
         "show_index": true,
         "index_heading": "How can we help?"
-      }
-    },
-    "faq-content-1": {
-      "type": "collapsible-tabs",
-      "blocks": {
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "title": "What size should I buy?",
-            "answer": "<p>If you’re not quite sure which size is right for you, refer to our size guides. They’re located underneath the available sizes for each of our products.</p>"
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "title": "Can I cancel my order?",
-            "answer": "<p>We completely get it, we change our minds too! While we wish could, once an order is placed, we are unable to alter or cancel it at this time. We hope to have a cancellation window one day in the future.</p><p>Should the item(s) not work out, make sure to exchange for a preferred style or return for a refund. As a reminder, domestic return shipping is free.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "question-1",
-        "question-2"
-      ],
-      "settings": {
-        "title": "Ordering"
       }
     },
     "faq-content-2": {
@@ -113,6 +88,32 @@
       ],
       "settings": {
         "title": "Shipping, Returns & Exchanges"
+      }
+    },
+    "faq-content-1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What size should I buy?",
+            "answer": "<p>If you’re not quite sure which size is right for you, refer to our size guides. They’re located underneath the available sizes for each of our products.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I cancel my order?",
+            "answer": "<p>We completely get it, we change our minds too! While we wish could, once an order is placed, we are unable to alter or cancel it at this time. We hope to have a cancellation window one day in the future.</p><p>Should the item(s) not work out, make sure to exchange for a preferred style or return for a refund. As a reminder, domestic return shipping is free.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2"
+      ],
+      "settings": {
+        "title": "Ordering"
       }
     },
     "contact": {
@@ -158,7 +159,7 @@
         "height": "medium",
         "text_alignment": "center",
         "full_width": false,
-        "color_scheme": "default"
+        "color_scheme": "1"
       }
     },
     "multi_column_fNPrKg": {
@@ -200,6 +201,7 @@
         "text_block_aKVH9J",
         "text_block_rcwPtR"
       ],
+      "disabled": true,
       "name": "Multi-column",
       "settings": {
         "title": "Get in touch",
@@ -214,8 +216,8 @@
   "order": [
     "heading",
     "main",
-    "faq-content-1",
     "faq-content-2",
+    "faq-content-1",
     "contact",
     "multi_column_fNPrKg"
   ]
