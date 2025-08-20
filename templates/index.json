@@ -53,6 +53,71 @@
         "overlay_style": "shadow"
       }
     },
+    "multi_column_9mJjdi": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_igA4dx": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/guarantee_1.svg",
+            "title": "110% Guarantee",
+            "text": "<p>If you don't love your timepiece, we pay you.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_fBbyqw": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/lifetime_1.svg",
+            "title": "Lifetime Warranty",
+            "text": "<p>Each piece is guaranteed for life, we promise.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_JHKHnx": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/custom-sourcing_1.svg",
+            "title": "Custom Sourcing",
+            "text": "<p>Let us know what you're looking for, and we'll track it down for you.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_wqRGDt": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/buy-back_1.svg",
+            "title": "Buyback Program",
+            "text": "<p>We buy back watches that you want to let go of.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_igA4dx",
+        "text_block_fBbyqw",
+        "text_block_JHKHnx",
+        "text_block_wqRGDt"
+      ],
+      "custom_css": [],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 60,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
     "logo_list_ADfK88": {
       "type": "logo-list",
       "blocks": {
@@ -332,68 +397,33 @@
         "autoplay_speed": 6
       }
     },
-    "multi_column_9mJjdi": {
-      "type": "multi-column",
+    "rich_text_VQptLb": {
+      "type": "rich-text",
       "blocks": {
-        "text_block_igA4dx": {
-          "type": "text_block",
+        "heading_iDyx3M": {
+          "type": "heading",
           "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/guarantee_1.svg",
-            "title": "110% Guarantee",
-            "text": "<p>If you don't love your timepiece, we pay you.</p>",
-            "button_label": "",
-            "link": ""
+            "title": "Rich text",
+            "use_h1": false
           }
         },
-        "text_block_fBbyqw": {
-          "type": "text_block",
+        "text_Em6q33": {
+          "type": "text",
           "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/lifetime_1.svg",
-            "title": "Lifetime Warranty",
-            "text": "<p>Each piece is guaranteed for life, we promise.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_JHKHnx": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/custom-sourcing_1.svg",
-            "title": "Custom Sourcing",
-            "text": "<p>Let us know what you're looking for, and we'll track it down for you.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_wqRGDt": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/buy-back_1.svg",
-            "title": "Buyback Program",
-            "text": "<p>We buy back watches that you want to let go of.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
+            "enlarge_text": true
           }
         }
       },
       "block_order": [
-        "text_block_igA4dx",
-        "text_block_fBbyqw",
-        "text_block_JHKHnx",
-        "text_block_wqRGDt"
+        "heading_iDyx3M",
+        "text_Em6q33"
       ],
-      "custom_css": [],
-      "name": "Multi-column",
+      "name": "Rich text",
       "settings": {
-        "title": "",
-        "media_aspect_ratio": "1",
-        "media_width": 60,
+        "height": "medium",
         "text_alignment": "center",
-        "button_style": "primary",
+        "full_width": false,
         "color_scheme": "default"
       }
     }
@@ -405,6 +435,7 @@
     "1480591889144",
     "0447c6d8-7e6b-47be-a617-8aa70b84a8af",
     "gallery_g99hPx",
-    "16117511238528a364"
+    "16117511238528a364",
+    "rich_text_VQptLb"
   ]
 }
