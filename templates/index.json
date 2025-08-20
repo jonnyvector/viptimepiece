@@ -408,10 +408,17 @@
     "rich_text_VQptLb": {
       "type": "rich-text",
       "blocks": {
+        "icon_TzrrXA": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble",
+            "icon_color": "rgba(0,0,0,0)"
+          }
+        },
         "heading_iDyx3M": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
+            "title": "Have any questions?",
             "use_h1": false
           }
         },
@@ -424,6 +431,7 @@
         }
       },
       "block_order": [
+        "icon_TzrrXA",
         "heading_iDyx3M",
         "text_Em6q33"
       ],
@@ -432,7 +440,7 @@
         "height": "medium",
         "text_alignment": "center",
         "full_width": false,
-        "color_scheme": "default"
+        "color_scheme": "1"
       }
     }
   },
