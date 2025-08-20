@@ -68,7 +68,7 @@
           "settings": {
             "title": "Exclusive Luxury for Sophisticated Style",
             "heading_max_width": 15,
-            "title_size": 84,
+            "title_size": 64,
             "title_size_mobile": 32,
             "use_h1": false
           }
@@ -90,8 +90,8 @@
       "settings": {
         "image": "shopify://shop_images/a-macro-close-up-of-a-high-end-luxury-watch-dial.png",
         "height": "fixed",
-        "height_desktop": 400,
-        "height_mobile": 460,
+        "height_desktop": 480,
+        "height_mobile": 320,
         "image_link": "",
         "full_width": true,
         "text_alignment": "center center",
