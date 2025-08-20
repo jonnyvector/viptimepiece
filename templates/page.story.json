@@ -276,14 +276,14 @@
         "heading_tEhayk": {
           "type": "heading",
           "settings": {
-            "title": "Ready to Find Your Timepiece?",
+            "title": "Have a question?",
             "use_h1": false
           }
         },
         "text_UFHVTH": {
           "type": "text",
           "settings": {
-            "text": "<p>Searching for a specific luxury timepiece? Considering selling a high-value watch? Or simply curious about the luxury watch market?</p>",
+            "text": "<p>Whether you're buying, selling, or sourcing a rare piece, our team responds within 1 business day.</p>",
             "enlarge_text": true
           }
         },
