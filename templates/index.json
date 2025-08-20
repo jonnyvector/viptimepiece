@@ -58,7 +58,7 @@
         "height_desktop": 880,
         "height_mobile": 520,
         "full_width": true,
-        "overlay_style": "shadow"
+        "overlay_style": "full image-overlay--bg-shadow"
       }
     },
     "multi_column_9mJjdi": {
