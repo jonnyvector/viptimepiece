@@ -69,25 +69,33 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "What is the shipping policy?",
-            "answer": "<p>Once your order is placed, you will receive a confirmation email letting you know that our fulfillment team has received your order. Once your order is fulfilled, you will receive an email notification with your tracking information. Shipping fees are non-refundable in the case of returns.</p>"
+            "title": "Do you ship internationally?",
+            "answer": "<p>We currently only ship within the United States. For international inquiries, please <a href=\"#\">contact us</a> directly.</p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout.</p>"
+            "title": "How long will it take to receive my order?",
+            "answer": "<p>Most orders ship within <strong>1–2 business days</strong> of payment. All shipments require signature confirmation and are fully insured.</p>"
+          }
+        },
+        "question_wGWFqH": {
+          "type": "question",
+          "settings": {
+            "title": "Can I view the watch in person before I buy?",
+            "answer": "<p>We operate primarily online, but <strong>private viewing appointments</strong> may be arranged for high-value purchases on a case-by-case basis.</p>"
           }
         }
       },
       "block_order": [
         "para-1",
         "question-1",
-        "question-2"
+        "question-2",
+        "question_wGWFqH"
       ],
       "settings": {
-        "title": "Shipping, Returns & Exchanges"
+        "title": "Shipping & Delivery"
       }
     },
     "faq-content-1": {
@@ -96,24 +104,128 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "What size should I buy?",
-            "answer": "<p>If you’re not quite sure which size is right for you, refer to our size guides. They’re located underneath the available sizes for each of our products.</p>"
+            "title": "Are your watches authentic?",
+            "answer": "<p>Yes — 100%. Every watch we sell is <strong>guaranteed authentic</strong>, verified by our in-house team and/or certified by trusted third-party authenticators.</p><p></p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "Can I cancel my order?",
-            "answer": "<p>We completely get it, we change our minds too! While we wish could, once an order is placed, we are unable to alter or cancel it at this time. We hope to have a cancellation window one day in the future.</p><p>Should the item(s) not work out, make sure to exchange for a preferred style or return for a refund. As a reminder, domestic return shipping is free.</p>"
+            "title": "Do your watches come with a warranty?",
+            "answer": "<p>Yes. We provide a <strong>lifetime warranty</strong> on all timepieces, covering authenticity and mechanical function under normal wear.</p>"
+          }
+        },
+        "question_bTxdPB": {
+          "type": "question",
+          "settings": {
+            "title": "What is the 110% money-back guarantee?",
+            "answer": "<p>If a watch you purchase is ever found to be inauthentic, we’ll refund <strong>110% of your original purchase price</strong> — our promise of integrity.</p>"
           }
         }
       },
       "block_order": [
         "question-1",
-        "question-2"
+        "question-2",
+        "question_bTxdPB"
       ],
       "settings": {
-        "title": "Ordering"
+        "title": "Warranty & Authenticity"
+      }
+    },
+    "collapsible_tabs_YtUjRz": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_zPCrW8": {
+          "type": "question",
+          "settings": {
+            "title": "Do you accept returns?",
+            "answer": "<p>We accept returns within <strong>7 days of delivery</strong> on unworn, undamaged watches in original condition. Please see our <a href=\"#\">Returns Policy</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_zPCrW8"
+      ],
+      "settings": {
+        "title": "Returns & Exchanges"
+      }
+    },
+    "collapsible_tabs_BhbwPT": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_DXJJtA": {
+          "type": "question",
+          "settings": {
+            "title": "Can I sell or trade in my watch with VIP Timepiece?",
+            "answer": "<p>Yes. We actively purchase luxury watches and accept trade-ins. <a href=\"/pages/contact\" title=\"Contact\">Contact us </a>and our team will contact you within 24 hours.</p>"
+          }
+        },
+        "question_BgdrtJ": {
+          "type": "question",
+          "settings": {
+            "title": "How do I get an offer for my watch?",
+            "answer": "<p>Send us clear photos, brand, model, reference number, and any documentation. Our evaluation team will provide a quote after review.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_DXJJtA",
+        "question_BgdrtJ"
+      ],
+      "settings": {
+        "title": "Selling & Trading"
+      }
+    },
+    "collapsible_tabs_hiUDPE": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_4pKJrX": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer custom sourcing for specific watches?",
+            "answer": "<p>Yes — whether you're looking for a rare reference or a limited-edition piece, we offer a <strong>personalized sourcing service</strong> using our global network.</p>"
+          }
+        },
+        "question_CCUFdV": {
+          "type": "question",
+          "settings": {
+            "title": "How long does sourcing take?",
+            "answer": "<p>Depending on the rarity and market demand, sourcing can take anywhere from <strong>a few days to several weeks</strong>. We’ll keep you updated at every step.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_4pKJrX",
+        "question_CCUFdV"
+      ],
+      "settings": {
+        "title": "Custom Sourcing"
+      }
+    },
+    "collapsible_tabs_tKVaMi": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_7rgcPH": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "answer": "<p>We accept all major credit cards and secure bank wire transfers. For high-value items, wire transfer is preferred.</p>"
+          }
+        },
+        "question_yCdnxy": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer financing?",
+            "answer": "<p>We do not currently offer financing, but we're happy to help structure secure payments for larger purchases. Contact us to discuss options.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_7rgcPH",
+        "question_yCdnxy"
+      ],
+      "settings": {
+        "title": "Payments & Financing"
       }
     },
     "contact": {
@@ -218,6 +330,10 @@
     "main",
     "faq-content-2",
     "faq-content-1",
+    "collapsible_tabs_YtUjRz",
+    "collapsible_tabs_BhbwPT",
+    "collapsible_tabs_hiUDPE",
+    "collapsible_tabs_tKVaMi",
     "contact",
     "multi_column_fNPrKg"
   ]
