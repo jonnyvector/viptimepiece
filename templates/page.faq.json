@@ -28,11 +28,20 @@
             "text": "<p>If you'd prefer to talk with a human, please reach out via our contact form by clicking the \"Contact Us\" button below.</p>",
             "enlarge_text": true
           }
+        },
+        "button_LM9adj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact US",
+            "button_link": "",
+            "button_style": "secondary"
+          }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "button_LM9adj"
       ],
       "settings": {
         "image": "shopify://shop_images/pexels-quang-viet-nguyen-107013384-9561300_1_1.png",
