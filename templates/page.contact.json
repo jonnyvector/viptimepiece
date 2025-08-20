@@ -67,10 +67,10 @@
         "message"
       ],
       "settings": {
-        "show_page_title": true,
+        "show_page_title": false,
         "use_columns": true,
         "contact_title": "Contact us",
-        "contact_text": ""
+        "contact_text": "<p>Whether you're inquiring about a specific timepiece, interested in selling a luxury watch, or simply have a question — we’re here to help.<br/><br/>Our team responds to all inquiries within 1 business day.</p>"
       }
     }
   },
