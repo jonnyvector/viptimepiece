@@ -400,31 +400,48 @@
     "rich_text_VQptLb": {
       "type": "rich-text",
       "blocks": {
+        "icon_eqhrfL": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble",
+            "icon_color": "rgba(0,0,0,0)"
+          }
+        },
         "heading_iDyx3M": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
+            "title": "Ready to Find Your Timepiece?",
             "use_h1": false
           }
         },
         "text_Em6q33": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Searching for a specific luxury timepiece? Considering selling a high-value watch? Or simply curious about the luxury watch market?</p>",
             "enlarge_text": true
+          }
+        },
+        "button_J7BYb8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact US",
+            "button_link": "shopify://pages/contact",
+            "button_style": "primary"
           }
         }
       },
       "block_order": [
+        "icon_eqhrfL",
         "heading_iDyx3M",
-        "text_Em6q33"
+        "text_Em6q33",
+        "button_J7BYb8"
       ],
       "name": "Rich text",
       "settings": {
         "height": "medium",
         "text_alignment": "center",
         "full_width": false,
-        "color_scheme": "default"
+        "color_scheme": "1"
       }
     }
   },
