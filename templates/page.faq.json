@@ -38,7 +38,7 @@
         "image": "shopify://shop_images/pexels-quang-viet-nguyen-107013384-9561300_1_1.png",
         "height": "fixed",
         "height_desktop": 480,
-        "height_mobile": 300,
+        "height_mobile": 320,
         "image_link": "",
         "full_width": true,
         "text_alignment": "center center",
