@@ -90,7 +90,7 @@
       "settings": {
         "image": "shopify://shop_images/a-macro-close-up-of-a-high-end-luxury-watch-dial.png",
         "height": "fixed",
-        "height_desktop": 600,
+        "height_desktop": 400,
         "height_mobile": 460,
         "image_link": "",
         "full_width": true,
