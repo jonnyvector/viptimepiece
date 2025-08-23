@@ -101,6 +101,14 @@
             "icon": "",
             "show_in_quickbuy": false
           }
+        },
+        "watch_specifications_DiXHnW": {
+          "type": "watch-specifications",
+          "settings": {
+            "heading": "Specifications",
+            "specifications": "",
+            "show_in_quickbuy": false
+          }
         }
       },
       "block_order": [
@@ -113,7 +121,8 @@
         "buy-buttons",
         "double_links_LaGJUa",
         "icon_columns_B3Vfqa",
-        "description"
+        "description",
+        "watch_specifications_DiXHnW"
       ],
       "settings": {
         "show_breadcrumbs": true,
