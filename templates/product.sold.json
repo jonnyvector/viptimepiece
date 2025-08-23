@@ -1,0 +1,258 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "sku_xqXaww": {
+          "type": "sku",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "double_links_LaGJUa": {
+          "type": "double_links",
+          "settings": {
+            "link_1_text": "Contact Us",
+            "link_1_url": "shopify://pages/contact",
+            "link_1_new_tab": false,
+            "link_2_text": "Call Us",
+            "link_2_url": "#",
+            "link_2_new_tab": false,
+            "link_style": "secondary"
+          }
+        },
+        "icon_columns_B3Vfqa": {
+          "type": "icon-columns",
+          "settings": {
+            "icon_size": "medium",
+            "text_size": "sm",
+            "enable_box": false,
+            "box_color": "#f4f4f4",
+            "icon_1": "award",
+            "icon_1_color": "rgba(0,0,0,0)",
+            "icon_1_heading": "100% Authentic",
+            "icon_1_text": "Each piece is certified by experts",
+            "icon_2": "truck",
+            "icon_2_color": "rgba(0,0,0,0)",
+            "icon_2_heading": "Fast, Secure Shipping",
+            "icon_2_text": "We provide video of shipping",
+            "icon_3": "credit_card",
+            "icon_3_color": "rgba(0,0,0,0)",
+            "icon_3_heading": "Secure Payment",
+            "icon_3_text": "Multiple secure payment options",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "sku_xqXaww",
+        "price",
+        "vendor",
+        "divider",
+        "variant-picker",
+        "buy-buttons",
+        "double_links_LaGJUa",
+        "icon_columns_B3Vfqa",
+        "description"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": false,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "rich_text_LyPJBj": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_hHqc7z": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble",
+            "icon_color": "rgba(0,0,0,0)"
+          }
+        },
+        "heading_BxCkEA": {
+          "type": "heading",
+          "settings": {
+            "title": "Have any questions?",
+            "use_h1": false
+          }
+        },
+        "text_AeJqc8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our team is always ready to help with any inquiries you may have.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_e9hwpk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact US",
+            "button_link": "shopify://pages/contact",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "icon_hHqc7z",
+        "heading_BxCkEA",
+        "text_AeJqc8",
+        "button_e9hwpk"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "1"
+      }
+    },
+    "image_with_text_overlay_n89KNA": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_Xt38xp": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_6GABF4": {
+          "type": "heading",
+          "settings": {
+            "title": "Have any questions?",
+            "heading_max_width": 15,
+            "title_size": 64,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_czD6hT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our team is always ready to help with any inquiries you may have.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_79bhYM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Xt38xp",
+        "heading_6GABF4",
+        "text_czD6hT",
+        "button_79bhYM"
+      ],
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/m-z1f3d6_w7dA-unsplash.jpg",
+        "height": "fixed",
+        "height_desktop": 460,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "rich_text_LyPJBj",
+    "image_with_text_overlay_n89KNA"
+  ]
+}
