@@ -51,6 +51,7 @@
         },
         "buy-buttons": {
           "type": "buy-buttons",
+          "disabled": true,
           "settings": {
             "show_quantity_selector": true,
             "enable_payment_button": true,
