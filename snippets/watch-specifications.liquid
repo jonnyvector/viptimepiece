@@ -11,52 +11,52 @@
     assign trimmed_spec = spec | strip
     case trimmed_spec
       when 'reference_number'
-        if product.metafields.watch.reference_number != blank
+        if product.metafields.watch_specs.reference_number != blank
           assign has_any_specs = true
           break
         endif
       when 'model_family'
-        if product.metafields.watch.model_family != blank
+        if product.metafields.watch_specs.model_family != blank
           assign has_any_specs = true
           break
         endif
       when 'movement'
-        if product.metafields.watch.movement != blank
+        if product.metafields.watch_specs.movement != blank
           assign has_any_specs = true
           break
         endif
       when 'case_material'
-        if product.metafields.watch.case_material != blank
+        if product.metafields.watch_specs.case_material != blank
           assign has_any_specs = true
           break
         endif
       when 'bracelet_material'
-        if product.metafields.watch.bracelet_material != blank or product.metafields.watch.strap_material != blank
+        if product.metafields.watch_specs.bracelet_material != blank
           assign has_any_specs = true
           break
         endif
       when 'dial'
-        if product.metafields.watch.dial_color != blank
+        if product.metafields.watch_specs.dial != blank
           assign has_any_specs = true
           break
         endif
       when 'case_dimension'
-        if product.metafields.watch.case_size != blank
+        if product.metafields.watch_specs.case_dimension != blank
           assign has_any_specs = true
           break
         endif
       when 'year'
-        if product.metafields.watch.year != blank
+        if product.metafields.watch_specs.year != blank
           assign has_any_specs = true
           break
         endif
       when 'condition'
-        if product.metafields.watch.condition != blank
+        if product.metafields.watch_specs.condition != blank
           assign has_any_specs = true
           break
         endif
       when 'box_papers'
-        if product.metafields.watch.box_papers != blank
+        if product.metafields.watch_specs.box_papers != blank
           assign has_any_specs = true
           break
         endif
@@ -82,38 +82,34 @@
           case trimmed_spec
             when 'reference_number'
               assign spec_label = 'Reference Number'
-              assign spec_value = product.metafields.watch.reference_number
+              assign spec_value = product.metafields.watch_specs.reference_number
             when 'model_family'
               assign spec_label = 'Model Family'
-              assign spec_value = product.metafields.watch.model_family
+              assign spec_value = product.metafields.watch_specs.model_family
             when 'movement'
               assign spec_label = 'Movement'
-              assign spec_value = product.metafields.watch.movement
+              assign spec_value = product.metafields.watch_specs.movement
             when 'case_material'
               assign spec_label = 'Case Material'
-              assign spec_value = product.metafields.watch.case_material
+              assign spec_value = product.metafields.watch_specs.case_material
             when 'bracelet_material'
               assign spec_label = 'Bracelet Material'
-              if product.metafields.watch.bracelet_material != blank
-                assign spec_value = product.metafields.watch.bracelet_material
-              else
-                assign spec_value = product.metafields.watch.strap_material
-              endif
+              assign spec_value = product.metafields.watch_specs.bracelet_material
             when 'dial'
               assign spec_label = 'Dial'
-              assign spec_value = product.metafields.watch.dial_color
+              assign spec_value = product.metafields.watch_specs.dial
             when 'case_dimension'
               assign spec_label = 'Case Dimension'
-              assign spec_value = product.metafields.watch.case_size
+              assign spec_value = product.metafields.watch_specs.case_dimension
             when 'year'
               assign spec_label = 'Year'
-              assign spec_value = product.metafields.watch.year
+              assign spec_value = product.metafields.watch_specs.year
             when 'condition'
               assign spec_label = 'Condition'
-              assign spec_value = product.metafields.watch.condition
+              assign spec_value = product.metafields.watch_specs.condition
             when 'box_papers'
               assign spec_label = 'Box & Papers'
-              assign spec_value = product.metafields.watch.box_papers
+              assign spec_value = product.metafields.watch_specs.box_papers
           endcase
         -%}
         
