@@ -872,6 +872,9 @@
               </div>
             {%- endif -%}
 
+          {% when 'watch-specifications' %}
+            {% render 'watch-specifications', product: product, block: block %}
+
           {% when 'related-products' %}
             {% if block.settings.product_list != blank %}
               <div class="{% if block.settings.style == 'card' %}lightly-spaced-row lightish-spaced-row-above{% else %}input-row{% endif %}{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
@@ -3517,6 +3520,31 @@
           "type": "liquid",
           "id": "custom_liquid",
           "label": "Liquid code"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_in_quickbuy",
+          "label": "Show in quick buy",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "watch-specifications",
+      "name": "Watch Specifications",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Specifications"
+        },
+        {
+          "type": "text",
+          "id": "specifications",
+          "label": "Specifications to show",
+          "info": "Comma-separated list: reference_number,model_family,movement,case_material,bracelet_material,dial,case_dimension,year,condition,box_papers",
+          "default": "reference_number,model_family,movement,case_material,bracelet_material,dial,case_dimension,year,condition,box_papers"
         },
         {
           "type": "checkbox",
