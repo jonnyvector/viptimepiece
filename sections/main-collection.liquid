@@ -345,9 +345,8 @@
 
 {% if section.settings.product_block_color_scheme != 'default' and section.settings.product_block_color_scheme != blank %}
 <style>
-  [data-section-id="{{ section.id }}"] product-block.use-color-scheme {
+  [data-section-id="{{ section.id }}"] product-block.use-color-scheme .product-block__detail {
     padding: 1rem;
-    display: block;
   }
 </style>
 {% endif %}

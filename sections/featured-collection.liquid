@@ -106,9 +106,8 @@
 
 {% if section.settings.product_block_color_scheme != 'default' and section.settings.product_block_color_scheme != blank %}
 <style>
-  .section-id-{{ section.id }} product-block.use-color-scheme {
+  .section-id-{{ section.id }} product-block.use-color-scheme .product-block__detail {
     padding: 1rem;
-    display: block;
   }
 </style>
 {% endif %}
