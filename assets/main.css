@@ -9828,6 +9828,8 @@ html:has(.drawer[open]) > body {
   display: block;
   text-align: center;
   transition: padding-bottom 0.7s ease;
+  background-color: rgb(var(--color-scheme-1));
+  padding: 1rem;
 }
 .product-block .block-inner .vendor {
   margin: 1em 0 0.4em;
