@@ -114,31 +114,26 @@
 
 <style>
   /* Make product block images full width with overlay arrows */
-  .section-id-{{ section.id }} .product-block {
-    padding: 0 !important;
-  }
-  
-  .section-id-{{ section.id }} .product-block .block-inner,
-  .section-id-{{ section.id }} .product-block .block-inner-inner {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  
   .section-id-{{ section.id }} .product-block .image-cont {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: calc(100% + var(--gutter, 20px)) !important;
+    margin-left: calc(var(--gutter, 20px) / -2) !important;
+    margin-right: calc(var(--gutter, 20px) / -2) !important;
+    position: relative;
   }
   
   .section-id-{{ section.id }} .product-block .image-label-wrap {
     width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   
   .section-id-{{ section.id }} .product-block .product-block__image,
   .section-id-{{ section.id }} .product-block .product-block__image .theme-img {
     width: 100% !important;
+  }
+  
+  /* Ensure arrows are properly positioned */
+  .section-id-{{ section.id }} .product-block .image-page-button {
+    position: absolute !important;
+    z-index: 10 !important;
   }
 </style>
 
