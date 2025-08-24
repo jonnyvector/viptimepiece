@@ -5,98 +5,101 @@
 
 {% assign watch_specs = product.metafields.custom.watch_specifications.value %}
 
+{{ product.metafields.custom.watch_specifications }}
+
+
 {% if watch_specs %}
-    <div class="watch-specifications__wrapper">
-      {% if block.settings.heading != blank %}
-        <div class="watch-specifications__heading">
-          <strong role="heading" aria-level="2">{{ block.settings.heading }}</strong>
-        </div>
-      {% endif %}
-      <div class="watch-specifications{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
-        <div class="watch-specs-table">
-          {%- if watch_specs.reference_number.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Reference Number</div>
-              <div class="watch-spec-value">{{ watch_specs.reference_number.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.model_family.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Model Family</div>
-              <div class="watch-spec-value">{{ watch_specs.model_family.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.movement.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Movement</div>
-              <div class="watch-spec-value">{{ watch_specs.movement.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.case_material.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Case Material</div>
-              <div class="watch-spec-value">{{ watch_specs.case_material.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.bracelet_material.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Bracelet Material</div>
-              <div class="watch-spec-value">{{ watch_specs.bracelet_material.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.dial.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Dial</div>
-              <div class="watch-spec-value">{{ watch_specs.dial.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.case_dimension.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Case Dimension</div>
-              <div class="watch-spec-value">{{ watch_specs.case_dimension.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.year.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Year</div>
-              <div class="watch-spec-value">{{ watch_specs.year.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.condition.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Condition</div>
-              <div class="watch-spec-value">{{ watch_specs.condition.value }}</div>
-            </div>
-          {%- endif -%}
-          
-          {%- if watch_specs.box_papers.value != blank -%}
-            <div class="watch-spec-row">
-              <div class="watch-spec-label">Box & Papers</div>
-              <div class="watch-spec-value">{{ watch_specs.box_papers.value }}</div>
-            </div>
-          {%- endif -%}
-        </div>
+  <div class="watch-specifications__wrapper">
+    {% if block.settings.heading != blank %}
+      <div class="watch-specifications__heading">
+        <strong role="heading" aria-level="2">{{ block.settings.heading }}</strong>
+      </div>
+    {% endif %}
+    <div class="watch-specifications{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
+      <div class="watch-specs-table">
+        {%- if watch_specs.reference_number.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Reference Number</div>
+            <div class="watch-spec-value">{{ watch_specs.reference_number.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.model_family.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Model Family</div>
+            <div class="watch-spec-value">{{ watch_specs.model_family.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.movement.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Movement</div>
+            <div class="watch-spec-value">{{ watch_specs.movement.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.case_material.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Case Material</div>
+            <div class="watch-spec-value">{{ watch_specs.case_material.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.bracelet_material.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Bracelet Material</div>
+            <div class="watch-spec-value">{{ watch_specs.bracelet_material.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.dial.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Dial</div>
+            <div class="watch-spec-value">{{ watch_specs.dial.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.case_dimension.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Case Dimension</div>
+            <div class="watch-spec-value">{{ watch_specs.case_dimension.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.year.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Year</div>
+            <div class="watch-spec-value">{{ watch_specs.year.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.condition.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Condition</div>
+            <div class="watch-spec-value">{{ watch_specs.condition.value }}</div>
+          </div>
+        {%- endif -%}
+
+        {%- if watch_specs.box_papers.value != blank -%}
+          <div class="watch-spec-row">
+            <div class="watch-spec-label">Box & Papers</div>
+            <div class="watch-spec-value">{{ watch_specs.box_papers.value }}</div>
+          </div>
+        {%- endif -%}
       </div>
     </div>
-  {% endif %}
+  </div>
+{% endif %}
 
 <style>
   .watch-specifications {
     margin: 1rem 0;
   }
-  
+
   .watch-specs-table {
     border-top: 1px solid var(--color-border, #e0e0e0);
   }
-  
+
   .watch-spec-row {
     display: flex;
     justify-content: space-between;
@@ -104,27 +107,27 @@
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--color-border, #e0e0e0);
   }
-  
+
   .watch-spec-label {
     color: var(--color-text-secondary, #666);
     font-weight: 400;
     flex: 1;
   }
-  
+
   .watch-spec-value {
     color: var(--color-text, #000);
     font-weight: 400;
     text-align: right;
     flex: 1;
   }
-  
+
   @media (max-width: 768px) {
     .watch-spec-row {
       flex-direction: column;
       align-items: flex-start;
       gap: 0.25rem;
     }
-    
+
     .watch-spec-value {
       text-align: left;
     }
