@@ -10224,6 +10224,9 @@ html:has(.drawer[open]) > body {
 .product-block__image .theme-img {
   mix-blend-mode: var(--product-block-blend-mode, none);
   object-position: var(--product-block-crop-align) center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 
 .image-cont--with-secondary-image .product-block__image--secondary {
