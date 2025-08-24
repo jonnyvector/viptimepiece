@@ -351,6 +351,23 @@
 </style>
 {% endif %}
 
+<style>
+  /* Make product block images full width with overlay arrows */
+  [data-section-id="{{ section.id }}"] .product-block .image-cont {
+    width: 100%;
+    margin: 0;
+  }
+  
+  [data-section-id="{{ section.id }}"] .product-block .image-label-wrap {
+    width: 100%;
+  }
+  
+  [data-section-id="{{ section.id }}"] .product-block .product-block__image,
+  [data-section-id="{{ section.id }}"] .product-block .product-block__image .theme-img {
+    width: 100%;
+  }
+</style>
+
 {% schema %}
 {
   "name": "Collection pages",
