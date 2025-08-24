@@ -5,18 +5,30 @@
 {%- endcomment -%}
 
 <div class="sold-tag-container lightly-spaced-row" {{ block.shopify_attributes }}>
-  <div class="sold-tag with-icon{% if block.settings.enable_box %} text-box{% endif %}">
-    <div class="icon-container">
-      <span class="sold-tag__icon">{%- render 'icon', icon: 'check_mark_in_circle', size: 'small' -%}</span>
-    </div>
-    <span class="with-icon__beside sold-tag__text">
-      {%- if block.settings.sold_text != blank -%}
-        {{ block.settings.sold_text }}
-      {%- else -%}
-        Sold
-      {%- endif -%}
+  {% if block.settings.enable_box %}
+    <span class="product-label product-label--sold">
+      <span>
+        {%- if block.settings.sold_text != blank -%}
+          {{ block.settings.sold_text }}
+        {%- else -%}
+          Sold
+        {%- endif -%}
+      </span>
     </span>
-  </div>
+  {% else %}
+    <div class="sold-tag with-icon">
+      <div class="icon-container">
+        <span class="sold-tag__icon">{%- render 'icon', icon: 'check_mark_in_circle', size: 'small' -%}</span>
+      </div>
+      <span class="with-icon__beside sold-tag__text">
+        {%- if block.settings.sold_text != blank -%}
+          {{ block.settings.sold_text }}
+        {%- else -%}
+          Sold
+        {%- endif -%}
+      </span>
+    </div>
+  {% endif %}
 </div>
 
 <style>
@@ -27,16 +39,15 @@
   .sold-tag {
     display: inline-flex;
     align-items: center;
-    color: var(--product-inventory-low-text-color, #666);
+    color: var(--product-label-overlay-stock-text);
     font-size: var(--base-text-size);
     font-weight: 500;
     padding: 0.75rem 0;
   }
 
-  .sold-tag.text-box {
-    --box-color: var(--product-inventory-low-box-color);
-    --box-text-color: var(--$product-inventory-low-text-color-channels);
-    --heading-color: var(--box-text-color);
+  .product-label--sold > span {
+    background: var(--product-label-overlay-stock-bg);
+    color: var(--product-label-overlay-stock-text);
   }
 
   .sold-tag .icon-container {
@@ -50,10 +61,6 @@
 
   .sold-tag .icon .svg-part-circle {
     fill: rgb(var(--body-bg-color, 255, 255, 255));
-  }
-
-  .sold-tag.text-box .icon .svg-part-circle {
-    fill: var(--product-inventory-low-icon-box-fill-color);
   }
 
   .sold-tag__text {
