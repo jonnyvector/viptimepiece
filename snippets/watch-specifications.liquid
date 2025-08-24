@@ -3,10 +3,9 @@
   Displays watch details from product metaobject in a clean table format
 {%- endcomment -%}
 
-{% when 'watch_specifications' %}
-  {% assign watch_specs = product.metafields.custom.watch_specifications.value %}
+{% assign watch_specs = product.metafields.custom.watch_specifications.value %}
 
-  {% if watch_specs %}
+{% if watch_specs %}
     <div class="watch-specifications__wrapper">
       {% if block.settings.heading != blank %}
         <div class="watch-specifications__heading">
