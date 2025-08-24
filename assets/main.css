@@ -10177,8 +10177,9 @@ html:has(.drawer[open]) > body {
 
 .product-block .image-cont {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   overflow: hidden;
+  width: 100%;
 }
 .product-block .image-cont .img-ar::before {
   padding-top: calc(100% / max(var(--aspect-ratio), 0.6));
