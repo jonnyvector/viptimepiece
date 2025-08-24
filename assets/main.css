@@ -9816,6 +9816,12 @@ html:has(.drawer[open]) > body {
     --product-columns-desktop: 5;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-grid--per-row-4 {
+    --product-columns-desktop: 3;
+  }
+}
 .product-grid .quickbuy-container {
   position: absolute;
   top: auto;
