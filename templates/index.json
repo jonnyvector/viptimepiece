@@ -211,7 +211,7 @@
         "button_7q4qt4": {
           "type": "button",
           "settings": {
-            "button_label": "VIEw All",
+            "button_label": "View All",
             "button_link": "shopify://collections/all",
             "button_style": "primary"
           }
