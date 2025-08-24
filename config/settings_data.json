@@ -81,6 +81,7 @@
     "button_style": "caps",
     "button_shape": "sharp",
     "prod_thumb_shape": "shortest",
+    "prod_thumb_crop": true,
     "prod_thumb_mob_per_row": "1",
     "prod_thumb_text_align": "left",
     "prod_thumb_hover_image": true,
