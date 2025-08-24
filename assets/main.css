@@ -12014,3 +12014,7 @@ model-viewer .container {
   flex: 1;
   text-align: center;
 }
+
+.media-gallery .product-media--image {
+  background-color: var(--color-scheme-1-color);
+}
