@@ -106,7 +106,6 @@
           "type": "watch-specifications",
           "settings": {
             "heading": "Specifications",
-            "specifications": "",
             "show_in_quickbuy": false
           }
         }

@@ -3,9 +3,9 @@
   Displays watch details from product metaobject in a clean table format
 {%- endcomment -%}
 
-{% assign watch_specs = product.metafields.custom.watch_specifications.value %}
+{% assign watch_specs = product.metafields.custom.watch_specs.value %}
 
-{{ product.metafields.custom.watch_specifications }}
+{{ product.metafields.custom.watch_specs }}
 
 
 {% if watch_specs %}
