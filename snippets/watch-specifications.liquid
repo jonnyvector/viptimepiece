@@ -1,97 +1,93 @@
 {%- comment -%}
   Watch Specifications Block
-  Displays watch details from product metafields in a clean table format
+  Displays watch details from product metaobject in a clean table format
 {%- endcomment -%}
 
-{%- liquid
-  assign has_any_specs = false
-  
-  if product.metafields.custom.watch_specs.reference_number != blank or product.metafields.custom.watch_specs.model_family != blank or product.metafields.custom.watch_specs.movement != blank or product.metafields.custom.watch_specs.case_material != blank or product.metafields.custom.watch_specs.bracelet_material != blank or product.metafields.custom.watch_specs.dial != blank or product.metafields.custom.watch_specs.case_dimension != blank or product.metafields.custom.watch_specs.year != blank or product.metafields.custom.watch_specs.condition != blank or product.metafields.custom.watch_specs.box_papers != blank
-    assign has_any_specs = true
-  endif
--%}
+{% when 'watch_specifications' %}
+  {% assign watch_specs = product.metafields.custom.watch_specifications.value %}
 
-{%- if has_any_specs -%}
-  <div class="watch-specifications{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
-    {%- if block.settings.heading != blank -%}
-      <div class="lightly-spaced-row">
-        <strong role="heading" aria-level="2">{{ block.settings.heading }}</strong>
+  {% if watch_specs %}
+    <div class="watch-specifications__wrapper">
+      {% if block.settings.heading != blank %}
+        <div class="watch-specifications__heading">
+          <strong role="heading" aria-level="2">{{ block.settings.heading }}</strong>
+        </div>
+      {% endif %}
+      <div class="watch-specifications{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
+        <div class="watch-specs-table">
+          {%- if watch_specs.reference_number.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Reference Number</div>
+              <div class="watch-spec-value">{{ watch_specs.reference_number.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.model_family.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Model Family</div>
+              <div class="watch-spec-value">{{ watch_specs.model_family.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.movement.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Movement</div>
+              <div class="watch-spec-value">{{ watch_specs.movement.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.case_material.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Case Material</div>
+              <div class="watch-spec-value">{{ watch_specs.case_material.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.bracelet_material.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Bracelet Material</div>
+              <div class="watch-spec-value">{{ watch_specs.bracelet_material.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.dial.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Dial</div>
+              <div class="watch-spec-value">{{ watch_specs.dial.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.case_dimension.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Case Dimension</div>
+              <div class="watch-spec-value">{{ watch_specs.case_dimension.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.year.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Year</div>
+              <div class="watch-spec-value">{{ watch_specs.year.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.condition.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Condition</div>
+              <div class="watch-spec-value">{{ watch_specs.condition.value }}</div>
+            </div>
+          {%- endif -%}
+          
+          {%- if watch_specs.box_papers.value != blank -%}
+            <div class="watch-spec-row">
+              <div class="watch-spec-label">Box & Papers</div>
+              <div class="watch-spec-value">{{ watch_specs.box_papers.value }}</div>
+            </div>
+          {%- endif -%}
+        </div>
       </div>
-    {%- endif -%}
-    
-    <div class="watch-specs-table">
-      {%- if product.metafields.custom.watch_specs.reference_number != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Reference Number</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.reference_number }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.model_family != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Model Family</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.model_family }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.movement != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Movement</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.movement }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.case_material != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Case Material</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.case_material }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.bracelet_material != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Bracelet Material</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.bracelet_material }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.dial != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Dial</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.dial }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.case_dimension != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Case Dimension</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.case_dimension }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.year != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Year</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.year }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.condition != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Condition</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.condition }}</div>
-        </div>
-      {%- endif -%}
-      
-      {%- if product.metafields.custom.watch_specs.box_papers != blank -%}
-        <div class="watch-spec-row">
-          <div class="watch-spec-label">Box & Papers</div>
-          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.box_papers }}</div>
-        </div>
-      {%- endif -%}
     </div>
-  </div>
-{%- endif -%}
+  {% endif %}
 
 <style>
   .watch-specifications {
