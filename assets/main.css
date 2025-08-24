@@ -10181,6 +10181,15 @@ html:has(.drawer[open]) > body {
   overflow: hidden;
   width: 100%;
 }
+
+/* Force product block images to fill full width */
+.product-block .image-cont,
+.product-block .image-cont .img-ar,
+.product-block .image-cont .product-block__image,
+.product-block .image-cont .image-label-wrap {
+  width: 100% !important;
+  margin: 0 !important;
+}
 .product-block .image-cont .img-ar::before {
   padding-top: calc(100% / max(var(--aspect-ratio), 0.6));
 }
