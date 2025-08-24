@@ -9836,6 +9836,9 @@ html:has(.drawer[open]) > body {
   text-align: center;
   transition: padding-bottom 0.7s ease;
   background-color: var(--color-scheme-1);
+}
+
+.product-block .product-block__detail {
   padding: 1rem;
 }
 .product-block .block-inner .vendor {
