@@ -105,7 +105,7 @@
         "watch_specifications_DiXHnW": {
           "type": "watch-specifications",
           "settings": {
-            "heading": "Specifications",
+            "heading": "",
             "show_in_quickbuy": false
           }
         }
