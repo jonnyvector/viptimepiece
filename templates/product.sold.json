@@ -12,6 +12,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "sold_tag_iknJ8M": {
+          "type": "sold-tag",
+          "settings": {
+            "sold_text": "Sold",
+            "enable_box": true
+          }
+        },
         "title": {
           "type": "title",
           "settings": {}
@@ -105,6 +112,7 @@
         }
       },
       "block_order": [
+        "sold_tag_iknJ8M",
         "title",
         "sku_xqXaww",
         "price",
