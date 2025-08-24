@@ -4,64 +4,11 @@
 {%- endcomment -%}
 
 {%- liquid
-  assign specs_to_show = block.settings.specifications | split: ','
   assign has_any_specs = false
   
-  for spec in specs_to_show
-    assign trimmed_spec = spec | strip
-    case trimmed_spec
-      when 'reference_number'
-        if product.metafields.custom.watch_specs.reference_number != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'model_family'
-        if product.metafields.custom.watch_specs.model_family != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'movement'
-        if product.metafields.custom.watch_specs.movement != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'case_material'
-        if product.metafields.custom.watch_specs.case_material != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'bracelet_material'
-        if product.metafields.custom.watch_specs.bracelet_material != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'dial'
-        if product.metafields.custom.watch_specs.dial != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'case_dimension'
-        if product.metafields.custom.watch_specs.case_dimension != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'year'
-        if product.metafields.custom.watch_specs.year != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'condition'
-        if product.metafields.custom.watch_specs.condition != blank
-          assign has_any_specs = true
-          break
-        endif
-      when 'box_papers'
-        if product.metafields.custom.watch_specs.box_papers != blank
-          assign has_any_specs = true
-          break
-        endif
-    endcase
-  endfor
+  if product.metafields.custom.watch_specs.reference_number != blank or product.metafields.custom.watch_specs.model_family != blank or product.metafields.custom.watch_specs.movement != blank or product.metafields.custom.watch_specs.case_material != blank or product.metafields.custom.watch_specs.bracelet_material != blank or product.metafields.custom.watch_specs.dial != blank or product.metafields.custom.watch_specs.case_dimension != blank or product.metafields.custom.watch_specs.year != blank or product.metafields.custom.watch_specs.condition != blank or product.metafields.custom.watch_specs.box_papers != blank
+    assign has_any_specs = true
+  endif
 -%}
 
 {%- if has_any_specs -%}
@@ -73,53 +20,75 @@
     {%- endif -%}
     
     <div class="watch-specs-table">
-      {%- for spec in specs_to_show -%}
-        {%- assign trimmed_spec = spec | strip -%}
-        {%- liquid
-          assign spec_label = ''
-          assign spec_value = ''
-          
-          case trimmed_spec
-            when 'reference_number'
-              assign spec_label = 'Reference Number'
-              assign spec_value = product.metafields.custom.watch_specs.reference_number
-            when 'model_family'
-              assign spec_label = 'Model Family'
-              assign spec_value = product.metafields.custom.watch_specs.model_family
-            when 'movement'
-              assign spec_label = 'Movement'
-              assign spec_value = product.metafields.custom.watch_specs.movement
-            when 'case_material'
-              assign spec_label = 'Case Material'
-              assign spec_value = product.metafields.custom.watch_specs.case_material
-            when 'bracelet_material'
-              assign spec_label = 'Bracelet Material'
-              assign spec_value = product.metafields.custom.watch_specs.bracelet_material
-            when 'dial'
-              assign spec_label = 'Dial'
-              assign spec_value = product.metafields.custom.watch_specs.dial
-            when 'case_dimension'
-              assign spec_label = 'Case Dimension'
-              assign spec_value = product.metafields.custom.watch_specs.case_dimension
-            when 'year'
-              assign spec_label = 'Year'
-              assign spec_value = product.metafields.custom.watch_specs.year
-            when 'condition'
-              assign spec_label = 'Condition'
-              assign spec_value = product.metafields.custom.watch_specs.condition
-            when 'box_papers'
-              assign spec_label = 'Box & Papers'
-              assign spec_value = product.metafields.custom.watch_specs.box_papers
-          endcase
-        -%}
-        
-        {%- if spec_value != blank -%}
-          <div class="watch-spec-row">
-            <div class="watch-spec-label">{{ spec_label }}</div>
-            <div class="watch-spec-value">{{ spec_value }}</div>
-          </div>
-        {%- endif -%}
-      {%- endfor -%}
+      {%- if product.metafields.custom.watch_specs.reference_number != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Reference Number</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.reference_number }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.model_family != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Model Family</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.model_family }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.movement != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Movement</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.movement }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.case_material != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Case Material</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.case_material }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.bracelet_material != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Bracelet Material</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.bracelet_material }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.dial != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Dial</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.dial }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.case_dimension != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Case Dimension</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.case_dimension }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.year != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Year</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.year }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.condition != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Condition</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.condition }}</div>
+        </div>
+      {%- endif -%}
+      
+      {%- if product.metafields.custom.watch_specs.box_papers != blank -%}
+        <div class="watch-spec-row">
+          <div class="watch-spec-label">Box & Papers</div>
+          <div class="watch-spec-value">{{ product.metafields.custom.watch_specs.box_papers }}</div>
+        </div>
+      {%- endif -%}
     </div>
   </div>
 {%- endif -%}
