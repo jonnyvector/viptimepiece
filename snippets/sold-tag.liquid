@@ -6,13 +6,18 @@
 
 <div class="sold-tag-container lightly-spaced-row" {{ block.shopify_attributes }}>
   {% if block.settings.enable_box %}
-    <span class="product-label product-label--sold">
+    <span class="product-label product-label--sold with-icon">
       <span>
-        {%- if block.settings.sold_text != blank -%}
-          {{ block.settings.sold_text }}
-        {%- else -%}
-          Sold
-        {%- endif -%}
+        <div class="icon-container">
+          <span class="sold-tag__icon">{%- render 'icon', icon: 'check_mark_in_circle', size: 'small' -%}</span>
+        </div>
+        <span class="with-icon__beside">
+          {%- if block.settings.sold_text != blank -%}
+            {{ block.settings.sold_text }}
+          {%- else -%}
+            Sold
+          {%- endif -%}
+        </span>
       </span>
     </span>
   {% else %}
@@ -48,6 +53,8 @@
   .product-label--sold > span {
     background: var(--product-label-overlay-stock-bg);
     color: var(--product-label-overlay-stock-text);
+    display: inline-flex;
+    align-items: center;
   }
 
   .sold-tag .icon-container {
