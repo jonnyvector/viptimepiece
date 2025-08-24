@@ -98,165 +98,128 @@
 
   {% if settings.quickbuy_style != 'off' and section.settings.enable_carousel %}
     <div class="quickbuy-container use-color-scheme use-color-scheme--{{ settings.quickbuy_color_scheme }}">
-      <a href="#" class="close-detail" aria-label="{{ 'accessibility.close' | t }}" tabindex="-1" aria-hidden="true">{% render 'icon-close', stroke_width: 1 %}</a>
+      <a
+        href="#"
+        class="close-detail"
+        aria-label="{{ 'accessibility.close' | t }}"
+        tabindex="-1"
+        aria-hidden="true">{% render 'icon-close'
+, stroke_width: 1 %}</a>
       <div class="inner"></div>
     </div>
   {% endif %}
 </div>
 
 {% if section.settings.product_block_color_scheme != 'default' and section.settings.product_block_color_scheme != blank %}
-<style>
-  .section-id-{{ section.id }} product-block.use-color-scheme .product-block__detail {
-    padding: 1rem;
-  }
-</style>
+  <style>
+    .section-id-{{ section.id }}product-block.use-color-scheme .product-block__detail {
+      padding: 1rem;
+    }
+  </style>
 {% endif %}
 
-<style>
-  /* Make product block images full width with overlay arrows */
-  .section-id-{{ section.id }} .product-block {
-    padding: 0 !important;
-  }
-  
-  .section-id-{{ section.id }} .product-block .block-inner,
-  .section-id-{{ section.id }} .product-block .block-inner-inner {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  
-  .section-id-{{ section.id }} .product-block .image-cont {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .section-id-{{ section.id }} .product-block .image-label-wrap {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .section-id-{{ section.id }} .product-block .product-block__image,
-  .section-id-{{ section.id }} .product-block .product-block__image .theme-img {
-    width: 100% !important;
-  }
-</style>
 
 {% schema %}
-{
-  "name": "Featured collection",
-  "class": "section-featured-collection",
-  "disabled_on": {
-    "templates": [
-      "password"
-    ],
-    "groups": [
-      "aside"
-    ]
-  },
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "Featured collection"
+  {
+    "name": "Featured collection",
+    "class": "section-featured-collection",
+    "disabled_on": {
+      "templates": ["password"],
+      "groups": ["aside"]
     },
-    {
-      "type": "collection",
-      "id": "collection",
-      "label": "Collection"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_vendor",
-      "label": "Show product vendor",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_carousel",
-      "label": "Enable carousel",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "grid",
-      "label": "Products per row",
-      "min": 2,
-      "max": 5,
-      "step": 1,
-      "default": 4
-    },
-    {
-      "type": "range",
-      "id": "rows",
-      "label": "Rows",
-      "info": "Does not apply to carousel layout",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 1
-    },
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "label": "Section color scheme",
-      "default": "default",
-      "options": [
-        {
-          "value": "default",
-          "label": "Default"
-        },
-        {
-          "value": "1",
-          "label": "1"
-        },
-        {
-          "value": "2",
-          "label": "2"
-        }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "product_block_color_scheme",
-      "label": "Product block color scheme",
-      "default": "default",
-      "options": [
-        {
-          "value": "default",
-          "label": "Default"
-        },
-        {
-          "value": "1",
-          "label": "1"
-        },
-        {
-          "value": "2",
-          "label": "2"
-        }
-      ]
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "label": "Show 'View all' link",
-      "default": true
-    },
-    {
-      "id": "full_width",
-      "type": "checkbox",
-      "label": "Full page width",
-      "default": true
-    }
-  ],
-  "presets": [
-    {
-      "name": "Featured collection",
-      "settings": {
-        "title": "Featured collection"
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show product vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_carousel",
+        "label": "Enable carousel",
+        "default": true
+      }, {
+        "type": "range",
+        "id": "grid",
+        "label": "Products per row",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      }, {
+        "type": "range",
+        "id": "rows",
+        "label": "Rows",
+        "info": "Does not apply to carousel layout",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "default": 1
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "Section color scheme",
+        "default": "default",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          }, {
+            "value": "1",
+            "label": "1"
+          }, {
+            "value": "2",
+            "label": "2"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "product_block_color_scheme",
+        "label": "Product block color scheme",
+        "default": "default",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          }, {
+            "value": "1",
+            "label": "1"
+          }, {
+            "value": "2",
+            "label": "2"
+          }
+        ]
+      }, {
+        "type": "checkbox",
+        "id": "show_view_all",
+        "label": "Show 'View all' link",
+        "default": true
+      }, {
+        "id": "full_width",
+        "type": "checkbox",
+        "label": "Full page width",
+        "default": true
       }
-    }
-  ]
-}
+    ],
+    "presets": [
+      {
+        "name": "Featured collection",
+        "settings": {
+          "title": "Featured collection"
+        }
+      }
+    ]
+  }
 {% endschema %}
