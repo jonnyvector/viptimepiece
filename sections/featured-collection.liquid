@@ -45,7 +45,7 @@
               if section.settings.enable_carousel
                 echo '<div class="slider__item">'
               endif
-              render 'onboarding-product-block', forloop: forloop
+              render 'onboarding-product-block', forloop: forloop, color_scheme: section.settings.product_block_color_scheme
               if section.settings.enable_carousel
                 echo '</div>'
               endif
@@ -81,7 +81,7 @@
               if section.settings.enable_carousel
                 echo '<div class="slider__item">'
               endif
-              render 'product-block', product: product, collection: collection, custom_aspect_ratio: chosen_aspect_ratio, no_swiping: section.settings.enable_carousel, no_quick_buy_markup: section.settings.enable_carousel
+              render 'product-block', product: product, collection: collection, custom_aspect_ratio: chosen_aspect_ratio, no_swiping: section.settings.enable_carousel, no_quick_buy_markup: section.settings.enable_carousel, color_scheme: section.settings.product_block_color_scheme
               if section.settings.enable_carousel
                 echo '</div>'
               endif
@@ -163,7 +163,7 @@
     {
       "type": "select",
       "id": "color_scheme",
-      "label": "Color scheme",
+      "label": "Section color scheme",
       "default": "default",
       "options": [
         {
@@ -177,6 +177,26 @@
         {
           "value": "2",
           "label": "2"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "product_block_color_scheme",
+      "label": "Product block color scheme",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "1",
+          "label": "Section color scheme 1"
+        },
+        {
+          "value": "2",
+          "label": "Section color scheme 2"
         }
       ]
     },
