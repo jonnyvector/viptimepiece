@@ -109,6 +109,13 @@
             "icon": "",
             "show_in_quickbuy": false
           }
+        },
+        "watch_specifications_QncD7H": {
+          "type": "watch-specifications",
+          "settings": {
+            "heading": "Specifications",
+            "show_in_quickbuy": false
+          }
         }
       },
       "block_order": [
@@ -122,7 +129,8 @@
         "buy-buttons",
         "double_links_LaGJUa",
         "icon_columns_B3Vfqa",
-        "description"
+        "description",
+        "watch_specifications_QncD7H"
       ],
       "settings": {
         "show_breadcrumbs": true,
