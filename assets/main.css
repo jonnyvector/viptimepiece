@@ -9832,15 +9832,39 @@ html:has(.drawer[open]) > body {
   padding: 1rem;
 }
 .product-block .block-inner .vendor {
-  margin: 1em 0 0.4em;
+  margin: 0 0 0.5em;
   font-size: var(--smaller-text-size-1);
   line-height: 1.3em;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-block__title {
+  margin: 0 0 0.75em;
+  font-size: var(--base-text-size);
+  font-weight: 600;
+  line-height: 1.4em;
+  color: rgb(var(--body-text-color));
 }
 
 .product-block__subtitle {
-  margin: 0 0 0.4em;
+  margin: 0 0 1em;
   font-size: var(--smaller-text-size-1);
   line-height: 1.3em;
+  opacity: 0.8;
+}
+
+.product-block .product-price {
+  margin-top: 1em;
+}
+
+.product-block .product-price .price,
+.product-block .product-price .price__default,
+.product-block .product-price .price__current {
+  font-size: calc(1.25 * var(--base-text-size));
+  font-weight: 700;
+  color: rgb(var(--body-text-color));
 }
 
 .product-block-options {
