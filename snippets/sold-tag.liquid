@@ -27,15 +27,15 @@
   .sold-tag {
     display: inline-flex;
     align-items: center;
-    color: var(--product-inventory-ok-text-color, #666);
+    color: var(--product-inventory-low-text-color, #666);
     font-size: var(--base-text-size);
     font-weight: 500;
     padding: 0.75rem 0;
   }
 
   .sold-tag.text-box {
-    --box-color: var(--product-inventory-ok-box-color);
-    --box-text-color: var(--product-inventory-ok-text-color);
+    --box-color: var(--product-inventory-low-box-color);
+    --box-text-color: var(--$product-inventory-low-text-color-channels);
     --heading-color: var(--box-text-color);
   }
 
@@ -53,7 +53,7 @@
   }
 
   .sold-tag.text-box .icon .svg-part-circle {
-    fill: var(--product-inventory-ok-icon-box-fill-color);
+    fill: var(--product-inventory-low-icon-box-fill-color);
   }
 
   .sold-tag__text {
