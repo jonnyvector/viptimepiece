@@ -9555,7 +9555,7 @@ carousel-slider[inactive] .slider-nav__btn {
 .product-price--large .price__default,
 .product-price--large .price__no-variant {
   font-size: calc(3 * var(--font-scale) + var(--base-text-size));
-  font-weight: 700;
+  font-weight: normal;
 }
 .product-price--large .price__was {
   margin-left: 8px;
@@ -9870,7 +9870,7 @@ html:has(.drawer[open]) > body {
 .product-block .product-price .price__default,
 .product-block .product-price .price__current {
   font-size: calc(1.1 * var(--base-text-size));
-  font-weight: 700;
+  font-weight: normal;
   color: rgb(var(--body-text-color));
 }
 
