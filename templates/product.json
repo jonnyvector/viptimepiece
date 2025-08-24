@@ -128,7 +128,7 @@
         "select_first_variant": true,
         "show_location_underneath": false,
         "inventory_transfers_enable": true,
-        "enable_sticky_columns": false,
+        "enable_sticky_columns": true,
         "enable_sticky_atc": true,
         "sticky_atc_position": "end",
         "sticky_atc_mobile": true,
