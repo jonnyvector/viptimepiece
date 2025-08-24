@@ -875,6 +875,9 @@
           {% when 'watch-specifications' %}
             {% render 'watch-specifications', product: product, block: block %}
 
+          {% when 'sold-tag' %}
+            {% render 'sold-tag', block: block %}
+
           {% when 'related-products' %}
             {% if block.settings.product_list != blank %}
               <div class="{% if block.settings.style == 'card' %}lightly-spaced-row lightish-spaced-row-above{% else %}input-row{% endif %}{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
@@ -3544,6 +3547,32 @@
           "id": "show_in_quickbuy",
           "label": "Show in quick buy",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "sold-tag",
+      "name": "Sold Tag",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_sold_tag",
+          "label": "Show sold tag",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "sold_text",
+          "label": "Sold tag text",
+          "default": "Sold",
+          "info": "Leave blank to use default translation"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_box",
+          "label": "Enable background box",
+          "default": false,
+          "info": "Add background styling similar to inventory tags"
         }
       ]
     },

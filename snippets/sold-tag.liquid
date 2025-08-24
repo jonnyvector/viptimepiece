@@ -1,0 +1,67 @@
+{%- comment -%}
+  Sold Tag Block
+  A reusable "Sold" tag that can be added to product templates
+  Styled consistently with existing product labels (sale, new, stock tags)
+{%- endcomment -%}
+
+{%- if block.settings.show_sold_tag -%}
+  <div class="sold-tag-container lightly-spaced-row" {{ block.shopify_attributes }}>
+    <div class="sold-tag with-icon{% if block.settings.enable_box %} text-box{% endif %}">
+      <div class="icon-container">
+        <span class="sold-tag__icon">{%- render 'icon', icon: 'check_mark_in_circle', size: 'small' -%}</span>
+      </div>
+      <span class="with-icon__beside sold-tag__text">
+        {%- if block.settings.sold_text != blank -%}
+          {{ block.settings.sold_text }}
+        {%- else -%}
+          Sold
+        {%- endif -%}
+      </span>
+    </div>
+  </div>
+{%- endif -%}
+
+<style>
+  .sold-tag-container {
+    margin: 1rem 0;
+  }
+
+  .sold-tag {
+    display: inline-flex;
+    align-items: center;
+    color: var(--product-label-sold-text, #666);
+    font-size: var(--base-text-size);
+    font-weight: 500;
+    padding: 0.75rem 0;
+  }
+
+  .sold-tag.text-box {
+    --box-color: var(--product-inventory-ok-box-color, #f0f0f0);
+    --box-text-color: var(--product-inventory-ok-text-color, #666);
+    padding: 15px 17px 14px;
+    border-radius: var(--btn-inspired-border-radius, 4px);
+    background-color: var(--box-color);
+    color: var(--box-text-color);
+  }
+
+  .sold-tag .icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .sold-tag .icon {
+    vertical-align: top;
+  }
+
+  .sold-tag .icon .svg-part-circle {
+    fill: rgb(var(--body-bg-color, 255, 255, 255));
+  }
+
+  .sold-tag.text-box .icon .svg-part-circle {
+    fill: var(--product-inventory-ok-icon-box-fill-color, #666);
+  }
+
+  .sold-tag__text {
+    font-weight: inherit;
+  }
+</style>

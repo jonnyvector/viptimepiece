@@ -1,0 +1,74 @@
+{%- comment -%}
+  Simple Sold Tag
+  A reusable "Sold" tag that can be included in any template
+  Styled consistently with existing product labels and inventory tags
+  
+  Usage: {% render 'sold-tag-simple', style: 'box' %}
+  Parameters:
+  - style: 'box' for background box, 'plain' for plain text (default: 'plain')
+  - text: custom text (default: 'Sold')
+  - show_icon: true/false to show check icon (default: true)
+{%- endcomment -%}
+
+{%- liquid
+  assign tag_style = style | default: 'plain'
+  assign tag_text = text | default: 'Sold'
+  assign show_tag_icon = show_icon | default: true
+-%}
+
+<div class="sold-tag-simple lightly-spaced-row">
+  <div class="sold-tag-simple__inner with-icon{% if tag_style == 'box' %} text-box{% endif %}">
+    {%- if show_tag_icon -%}
+      <div class="icon-container">
+        <span class="sold-tag-simple__icon">{%- render 'icon', icon: 'check_mark_in_circle', size: 'small' -%}</span>
+      </div>
+    {%- endif -%}
+    <span class="with-icon__beside sold-tag-simple__text">{{ tag_text }}</span>
+  </div>
+</div>
+
+<style>
+  .sold-tag-simple {
+    margin: 1rem 0;
+  }
+
+  .sold-tag-simple__inner {
+    display: inline-flex;
+    align-items: center;
+    color: var(--product-label-sold-text, #666);
+    font-size: var(--base-text-size);
+    font-weight: 500;
+    padding: 0.75rem 0;
+  }
+
+  .sold-tag-simple__inner.text-box {
+    --box-color: var(--product-inventory-ok-box-color, #f0f0f0);
+    --box-text-color: var(--product-inventory-ok-text-color, #666);
+    padding: 15px 17px 14px;
+    border-radius: var(--btn-inspired-border-radius, 4px);
+    background-color: var(--box-color);
+    color: var(--box-text-color);
+  }
+
+  .sold-tag-simple .icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .sold-tag-simple .icon {
+    vertical-align: top;
+  }
+
+  .sold-tag-simple .icon .svg-part-circle {
+    fill: rgb(var(--body-bg-color, 255, 255, 255));
+  }
+
+  .sold-tag-simple.text-box .icon .svg-part-circle,
+  .sold-tag-simple__inner.text-box .icon .svg-part-circle {
+    fill: var(--product-inventory-ok-icon-box-fill-color, #666);
+  }
+
+  .sold-tag-simple__text {
+    font-weight: inherit;
+  }
+</style>
