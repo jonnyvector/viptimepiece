@@ -21,7 +21,7 @@
             <div class="contact-form-drawer__success">
               <p><strong>{{ 'contact.form.post_success' | t }}</strong></p>
               <button type="button" class="btn btn--secondary contact-form-drawer__close-success">
-                {{ 'general.close' | t | default: 'Close' }}
+                Close
               </button>
             </div>
           {% else %}
@@ -59,7 +59,7 @@
                 {{ 'contact.form.send' | t }}
               </button>
               <button type="button" class="btn btn--secondary contact-form-drawer__cancel">
-                {{ 'general.cancel' | t | default: 'Cancel' }}
+                Cancel
               </button>
             </div>
           {% endif %}
@@ -178,6 +178,16 @@
   /* Form uses theme's existing flexible-layout and input styles */
   .contact-form-drawer .required {
     color: rgb(var(--accent-color));
+  }
+
+  /* Ensure consistent input widths */
+  .contact-form-drawer input,
+  .contact-form-drawer textarea {
+    width: 100%;
+  }
+
+  .contact-form-drawer .flexible-layout {
+    gap: 1rem;
   }
 
   .contact-form-drawer__actions {
