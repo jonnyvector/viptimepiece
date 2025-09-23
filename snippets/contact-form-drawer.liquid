@@ -48,6 +48,13 @@
                 <input type="tel" id="ContactFormPhone" name="contact[phone]" autocomplete="tel" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
               </div>
 
+              {% if product %}
+              <div class="column column--full">
+                <label for="ContactFormProduct">Product</label>
+                <input type="text" id="ContactFormProduct" name="contact[product_name]" value="{{ product.title | escape }}" readonly>
+              </div>
+              {% endif %}
+
               <div class="column column--full">
                 <label for="ContactFormMessage">{{ 'contact.form.message' | t | default: 'Message' }} <span class="required">*</span></label>
                 <textarea id="ContactFormMessage" name="contact[body]" required>{% if form.body %}{{ form.body }}{% endif %}</textarea>
@@ -188,6 +195,12 @@
 
   .contact-form-drawer .flexible-layout {
     gap: 1rem;
+  }
+
+  /* Style readonly product field */
+  .contact-form-drawer input[readonly] {
+    background: rgba(var(--text-color), 0.05);
+    cursor: default;
   }
 
   .contact-form-drawer__actions {
