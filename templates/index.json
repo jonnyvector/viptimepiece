@@ -127,70 +127,6 @@
         "color_scheme": "default"
       }
     },
-    "logo_list_ADfK88": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_83J8ay": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/audemars_7ab3e422-0736-4d04-b3da-0d58e076aad3.svg",
-            "image_width": 160,
-            "link": "shopify://collections/audemars-piguet",
-            "title": ""
-          }
-        },
-        "logo_BDViEc": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/hublot_9b7ba771-764b-4d9c-962c-5f1d905cacbd.svg",
-            "image_width": 160,
-            "link": "shopify://collections/hublot",
-            "title": ""
-          }
-        },
-        "logo_8fKGGf": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/omega_741d9aee-7b6d-4a2e-bcb4-cdc18d089145.svg",
-            "image_width": 160,
-            "link": "shopify://collections/omega",
-            "title": ""
-          }
-        },
-        "logo_NVQdqn": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/panerai.svg",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_hHkG9P": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/rolex_cc7fc76a-f98d-45ac-b71f-205d396c6d32.svg",
-            "image_width": 160,
-            "link": "shopify://collections/omega",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_83J8ay",
-        "logo_BDViEc",
-        "logo_8fKGGf",
-        "logo_NVQdqn",
-        "logo_hHkG9P"
-      ],
-      "disabled": true,
-      "name": "Logo list",
-      "settings": {
-        "title": "Featured Brands",
-        "image_opacity": 80,
-        "color_scheme": "default"
-      }
-    },
     "1480591889144": {
       "type": "featured-collection",
       "settings": {
@@ -430,6 +366,118 @@
         "autoplay_speed": 6
       }
     },
+    "logo_list_ADfK88": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_83J8ay": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/audemars_7ab3e422-0736-4d04-b3da-0d58e076aad3.svg",
+            "image_width": 160,
+            "link": "shopify://collections/audemars-piguet",
+            "title": ""
+          }
+        },
+        "logo_BDViEc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hublot_9b7ba771-764b-4d9c-962c-5f1d905cacbd.svg",
+            "image_width": 160,
+            "link": "shopify://collections/hublot",
+            "title": ""
+          }
+        },
+        "logo_8fKGGf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/omega_741d9aee-7b6d-4a2e-bcb4-cdc18d089145.svg",
+            "image_width": 160,
+            "link": "shopify://collections/omega",
+            "title": ""
+          }
+        },
+        "logo_NVQdqn": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/panerai.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_hHkG9P": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rolex_cc7fc76a-f98d-45ac-b71f-205d396c6d32.svg",
+            "image_width": 160,
+            "link": "shopify://collections/omega",
+            "title": ""
+          }
+        },
+        "logo_apFWBz": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/chopard.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_4hxTti": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/brequet_1.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_3zWzcy": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/blancpain.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_87m8en": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/bvlgari.svg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_LRt6zL": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_83J8ay",
+        "logo_BDViEc",
+        "logo_8fKGGf",
+        "logo_NVQdqn",
+        "logo_hHkG9P",
+        "logo_apFWBz",
+        "logo_4hxTti",
+        "logo_3zWzcy",
+        "logo_87m8en",
+        "logo_LRt6zL"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "Featured Brands",
+        "image_opacity": 95,
+        "color_scheme": "default"
+      }
+    },
     "rich_text_VQptLb": {
       "type": "rich-text",
       "blocks": {
@@ -481,12 +529,12 @@
   "order": [
     "1617291721c3d3e73d",
     "multi_column_9mJjdi",
-    "logo_list_ADfK88",
     "1480591889144",
     "rich_text_keqXRT",
     "0447c6d8-7e6b-47be-a617-8aa70b84a8af",
     "gallery_g99hPx",
     "16117511238528a364",
+    "logo_list_ADfK88",
     "rich_text_VQptLb"
   ]
 }
