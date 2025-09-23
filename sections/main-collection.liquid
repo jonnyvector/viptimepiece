@@ -26,7 +26,8 @@
       endif
     -%}
 
-    {%- if related_collections_count > 0 -%}{% capture related_collection_html %}
+    {%- if related_collections_count > 0 -%}
+      {% capture related_collection_html %}
     {% if section.settings.related_collections_style == 'buttons' %}
       <div class="container{% if header_image_enabled %} container--not-mobile{% endif %} lightish-spaced-row-above">
         <related-collection-link-buttons class="related-collection-links related-collection-links--buttons align-center{% if header_image_enabled %} image-overlay__over{% endif %}" data-expander-btn-text="{{ 'sections.collection.view_all_related_collections' | t }}">
@@ -122,21 +123,22 @@
   {% endcapture %}
     {%- endif -%}
 
-      {% if header_image_enabled %}
-        {%- liquid
+    {% if header_image_enabled %}
+      {%- liquid
         assign show_header = false
-          if section.settings.show_title
-        assign show_header = true
+        if section.settings.show_title
+          assign show_header = true
         endif
-          if collection.description != blank and section.settings.coll_desc_pos == 'above'
-        assign show_header = true
+        if collection.description != blank and section.settings.coll_desc_pos == 'above'
+          assign show_header = true
         endif
-          if related_collections_count > 0 and section.settings.related_collections_style == 'buttons'
-        assign show_header = true
-      endif
+        if related_collections_count > 0 and section.settings.related_collections_style == 'buttons'
+          assign show_header = true
+        endif
       -%}
-        {%- if show_header -%}
-          <div class="page-header page-header--with-background img-fill image-overlay image-overlay--bg-{{ section.settings.overlay_style }} page-header--padded-{{ section.settings.heading_image_height }}"> <div class="image-overlay__image">
+      {%- if show_header -%}
+        <div class="page-header page-header--with-background img-fill image-overlay image-overlay--bg-{{ section.settings.overlay_style }} page-header--padded-{{ section.settings.heading_image_height }}">
+          <div class="image-overlay__image">
             {%- render 'image' with collection.image
               , loading: 'eager'
               , fetchpriority: 'high' -%}
