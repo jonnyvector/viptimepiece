@@ -32,25 +32,25 @@
               <input type="hidden" name="contact[product]" value="{{ product.title | escape }} - {{ product.url | prepend: request.origin }}"/>
             {% endif %}
 
-            <div class="contact-form-drawer__fields">
-              <div class="contact-form-drawer__field">
-                <label for="ContactFormName">{{ 'contact.form.name' | t }} <span class="required">*</span></label>
-                <input type="text" id="ContactFormName" name="contact[{{ 'contact.form.name' | t | handle }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" required>
+            <div class="flexible-layout flexible-layout--form">
+              <div class="column column--full">
+                <label for="ContactFormName">{{ 'contact.form.name' | t | default: 'Name' }} <span class="required">*</span></label>
+                <input type="text" id="ContactFormName" name="contact[name]" autocomplete="name" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" required>
               </div>
 
-              <div class="contact-form-drawer__field">
-                <label for="ContactFormEmail">{{ 'contact.form.email' | t }} <span class="required">*</span></label>
-                <input type="email" id="ContactFormEmail" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
+              <div class="column column--full">
+                <label for="ContactFormEmail">{{ 'contact.form.email' | t | default: 'Email' }} <span class="required">*</span></label>
+                <input type="email" id="ContactFormEmail" name="contact[email]" class="email" autocomplete="email" spellcheck="false" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
               </div>
 
-              <div class="contact-form-drawer__field">
-                <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
-                <input type="tel" id="ContactFormPhone" name="contact[{{ 'contact.form.phone' | t | handle }}]" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+              <div class="column column--full">
+                <label for="ContactFormPhone">{{ 'contact.form.phone' | t | default: 'Phone' }}</label>
+                <input type="tel" id="ContactFormPhone" name="contact[phone]" autocomplete="tel" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
               </div>
 
-              <div class="contact-form-drawer__field">
-                <label for="ContactFormMessage">{{ 'contact.form.message' | t }} <span class="required">*</span></label>
-                <textarea id="ContactFormMessage" name="contact[body]" rows="6" required>{% if form.body %}{{ form.body }}{% endif %}</textarea>
+              <div class="column column--full">
+                <label for="ContactFormMessage">{{ 'contact.form.message' | t | default: 'Message' }} <span class="required">*</span></label>
+                <textarea id="ContactFormMessage" name="contact[body]" required>{% if form.body %}{{ form.body }}{% endif %}</textarea>
               </div>
             </div>
 
@@ -175,45 +175,9 @@
     color: var(--success-color, #28a745);
   }
 
-  .contact-form-drawer__fields {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .contact-form-drawer__field {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-form-drawer__field label {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    font-size: var(--base-text-size);
-    color: rgb(var(--text-color));
-  }
-
-  .contact-form-drawer__field .required {
+  /* Form uses theme's existing flexible-layout and input styles */
+  .contact-form-drawer .required {
     color: rgb(var(--accent-color));
-  }
-
-  .contact-form-drawer__field input,
-  .contact-form-drawer__field textarea {
-    padding: 0.75rem;
-    border: 1px solid rgba(var(--text-color), 0.2);
-    border-radius: 4px;
-    font-size: var(--base-text-size);
-    font-family: inherit;
-    background: rgb(var(--body-bg-color));
-    color: rgb(var(--text-color));
-    transition: border-color 0.2s ease;
-  }
-
-  .contact-form-drawer__field input:focus,
-  .contact-form-drawer__field textarea:focus {
-    outline: none;
-    border-color: rgb(var(--accent-color));
-    box-shadow: 0 0 0 2px rgba(var(--accent-color), 0.25);
   }
 
   .contact-form-drawer__actions {
