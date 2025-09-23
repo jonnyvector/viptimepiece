@@ -31,6 +31,9 @@
   <script src="{{ 'slideshow.js' | asset_url }}" defer></script>
 {%- endif -%}
 
+{%- comment -%} Load side-drawer functionality for contact form {%- endcomment -%}
+<script src="{{ 'side-drawer.js' | asset_url }}" defer></script>
+
 {% if section.settings.show_breadcrumbs %}
   <div class="container desktop-only not-in-quickbuy" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}>
     <div class="page-header">
@@ -627,16 +630,28 @@
 
             {% when 'double_links' %}
               <div class="lightly-spaced-row double-links" {{ block.shopify_attributes }}>
-                {% if block.settings.link_1_text != blank and block.settings.link_1_url != blank %}
-                  <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_1_url }}"{% if block.settings.link_1_new_tab %} target="_blank"{% endif %}>
-                    {{ block.settings.link_1_text | escape }}
-                  </a>
+                {% if block.settings.link_1_text != blank %}
+                  {% if block.settings.link_1_action == 'contact_form' %}
+                    <button type="button" class="btn btn--{{ block.settings.link_style }} contact-drawer-trigger" onclick="openContactDrawer()">
+                      {{ block.settings.link_1_text | escape }}
+                    </button>
+                  {% elsif block.settings.link_1_url != blank %}
+                    <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_1_url }}"{% if block.settings.link_1_new_tab %} target="_blank"{% endif %}>
+                      {{ block.settings.link_1_text | escape }}
+                    </a>
+                  {% endif %}
                 {% endif %}
-                
-                {% if block.settings.link_2_text != blank and block.settings.link_2_url != blank %}
-                  <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_2_url }}"{% if block.settings.link_2_new_tab %} target="_blank"{% endif %}>
-                    {{ block.settings.link_2_text | escape }}
-                  </a>
+
+                {% if block.settings.link_2_text != blank %}
+                  {% if block.settings.link_2_action == 'contact_form' %}
+                    <button type="button" class="btn btn--{{ block.settings.link_style }} contact-drawer-trigger" onclick="openContactDrawer()">
+                      {{ block.settings.link_2_text | escape }}
+                    </button>
+                  {% elsif block.settings.link_2_url != blank %}
+                    <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_2_url }}"{% if block.settings.link_2_new_tab %} target="_blank"{% endif %}>
+                      {{ block.settings.link_2_text | escape }}
+                    </a>
+                  {% endif %}
                 {% endif %}
               </div>
             
@@ -1086,6 +1101,9 @@
   </div>
 
   {%- render 'product-popups', product: product -%}
+
+  {%- comment -%} Contact form drawer for product inquiries {%- endcomment -%}
+  {%- render 'contact-form-drawer', product: product -%}
 
   {%- render 'structured-data-product', product: product, current_variant: product.selected_or_first_available_variant -%}
 </product-form>
@@ -2693,15 +2711,27 @@
         "label": "First Link Text"
       },
       {
+        "type": "select",
+        "id": "link_1_action",
+        "label": "First Link Action",
+        "default": "url",
+        "options": [
+          { "value": "url", "label": "Go to URL" },
+          { "value": "contact_form", "label": "Open Contact Form" }
+        ]
+      },
+      {
         "type": "url",
         "id": "link_1_url",
-        "label": "First Link URL"
+        "label": "First Link URL",
+        "info": "Only used when action is 'Go to URL'"
       },
       {
         "type": "checkbox",
         "id": "link_1_new_tab",
         "label": "Open First Link in New Tab",
-        "default": false
+        "default": false,
+        "info": "Only applies to URL links"
       },
       {
         "type": "text",
@@ -2709,15 +2739,27 @@
         "label": "Second Link Text"
       },
       {
+        "type": "select",
+        "id": "link_2_action",
+        "label": "Second Link Action",
+        "default": "url",
+        "options": [
+          { "value": "url", "label": "Go to URL" },
+          { "value": "contact_form", "label": "Open Contact Form" }
+        ]
+      },
+      {
         "type": "url",
         "id": "link_2_url",
-        "label": "Second Link URL"
+        "label": "Second Link URL",
+        "info": "Only used when action is 'Go to URL'"
       },
       {
         "type": "checkbox",
         "id": "link_2_new_tab",
         "label": "Open Second Link in New Tab",
-        "default": false
+        "default": false,
+        "info": "Only applies to URL links"
       },
       {
         "type": "select",
