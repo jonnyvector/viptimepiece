@@ -304,6 +304,7 @@
         "media_F6xhTN",
         "media_34yYaN"
       ],
+      "disabled": true,
       "name": "Gallery",
       "settings": {
         "grid_desktop": 2,
@@ -453,6 +454,7 @@
         "logo_LRt6zL": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/cartier.svg",
             "image_width": 160,
             "link": "",
             "title": ""
