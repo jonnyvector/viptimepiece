@@ -632,11 +632,11 @@
               <div class="lightly-spaced-row double-links" {{ block.shopify_attributes }}>
                 {% if block.settings.link_1_text != blank %}
                   {% if block.settings.link_1_action == 'contact_form' %}
-                    <button type="button" class="btn btn--{{ block.settings.link_style }} contact-drawer-trigger" onclick="openContactDrawer()">
+                    <button type="button" class="btn btn--{{ block.settings.link_style }} contact-drawer-trigger double-links__button" onclick="openContactDrawer()">
                       {{ block.settings.link_1_text | escape }}
                     </button>
                   {% elsif block.settings.link_1_url != blank %}
-                    <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_1_url }}"{% if block.settings.link_1_new_tab %} target="_blank"{% endif %}>
+                    <a class="btn btn--{{ block.settings.link_style }} double-links__button" href="{{ block.settings.link_1_url }}"{% if block.settings.link_1_new_tab %} target="_blank"{% endif %}>
                       {{ block.settings.link_1_text | escape }}
                     </a>
                   {% endif %}
@@ -644,16 +644,29 @@
 
                 {% if block.settings.link_2_text != blank %}
                   {% if block.settings.link_2_action == 'contact_form' %}
-                    <button type="button" class="btn btn--{{ block.settings.link_style }} contact-drawer-trigger" onclick="openContactDrawer()">
+                    <button type="button" class="btn btn--{{ block.settings.link_style }} contact-drawer-trigger double-links__button" onclick="openContactDrawer()">
                       {{ block.settings.link_2_text | escape }}
                     </button>
                   {% elsif block.settings.link_2_url != blank %}
-                    <a class="btn btn--{{ block.settings.link_style }}" href="{{ block.settings.link_2_url }}"{% if block.settings.link_2_new_tab %} target="_blank"{% endif %}>
+                    <a class="btn btn--{{ block.settings.link_style }} double-links__button" href="{{ block.settings.link_2_url }}"{% if block.settings.link_2_new_tab %} target="_blank"{% endif %}>
                       {{ block.settings.link_2_text | escape }}
                     </a>
                   {% endif %}
                 {% endif %}
               </div>
+
+              <style>
+                .double-links {
+                  display: flex;
+                  gap: 1rem;
+                }
+
+                .double-links__button {
+                  flex: 1;
+                  min-width: 0;
+                  text-align: center;
+                }
+              </style>
             
 
           {% when 'image' %}
