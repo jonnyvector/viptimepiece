@@ -3556,14 +3556,29 @@
     },
     {
       "type": "sold-tag",
-      "name": "Sold Tag",
+      "name": "Product Tag",
       "settings": [
         {
+          "type": "select",
+          "id": "tag_type",
+          "label": "Tag type",
+          "options": [
+            {
+              "value": "sold",
+              "label": "Sold"
+            },
+            {
+              "value": "custom_sourced",
+              "label": "Custom Sourced"
+            }
+          ],
+          "default": "sold"
+        },
+        {
           "type": "text",
-          "id": "sold_text",
-          "label": "Sold tag text",
-          "default": "Sold",
-          "info": "Leave blank to use default translation"
+          "id": "custom_text",
+          "label": "Custom text",
+          "info": "Leave blank to use default text for selected tag type"
         },
         {
           "type": "checkbox",

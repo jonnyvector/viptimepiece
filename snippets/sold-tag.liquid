@@ -1,47 +1,58 @@
 {%- comment -%}
-  Sold Tag Block
-  A reusable "Sold" tag that can be added to product templates
+  Product Tag Block
+  A reusable product tag that can display different statuses (Sold, Custom Sourced, etc.)
   Styled consistently with existing product labels (sale, new, stock tags)
 {%- endcomment -%}
 
-<div class="sold-tag-container lightly-spaced-row" {{ block.shopify_attributes }}>
+{%- liquid
+  assign tag_type = block.settings.tag_type | default: 'sold'
+  assign tag_text = block.settings.custom_text
+  assign tag_icon = 'check_mark_in_circle'
+
+  case tag_type
+    when 'sold'
+      if tag_text == blank
+        assign tag_text = 'Sold'
+      endif
+      assign tag_icon = 'check_mark_in_circle'
+    when 'custom_sourced'
+      if tag_text == blank
+        assign tag_text = 'Custom Sourced'
+      endif
+      assign tag_icon = 'star'
+  endcase
+-%}
+
+<div class="product-tag-container lightly-spaced-row" {{ block.shopify_attributes }}>
   {% if block.settings.enable_box %}
-    <span class="product-label product-label--sold with-icon">
+    <span class="product-label product-label--{{ tag_type }} with-icon">
       <span>
         <div class="icon-container">
-          <span class="sold-tag__icon">{%- render 'icon', icon: 'check_mark_in_circle', size: 'small' -%}</span>
+          <span class="product-tag__icon">{%- render 'icon', icon: tag_icon, size: 'small' -%}</span>
         </div>
         <span class="with-icon__beside">
-          {%- if block.settings.sold_text != blank -%}
-            {{ block.settings.sold_text }}
-          {%- else -%}
-            Sold
-          {%- endif -%}
+          {{ tag_text }}
         </span>
       </span>
     </span>
   {% else %}
-    <div class="sold-tag with-icon">
+    <div class="product-tag with-icon">
       <div class="icon-container">
-        <span class="sold-tag__icon">{%- render 'icon', icon: 'check_mark_in_circle', size: 'small' -%}</span>
+        <span class="product-tag__icon">{%- render 'icon', icon: tag_icon, size: 'small' -%}</span>
       </div>
-      <span class="with-icon__beside sold-tag__text">
-        {%- if block.settings.sold_text != blank -%}
-          {{ block.settings.sold_text }}
-        {%- else -%}
-          Sold
-        {%- endif -%}
+      <span class="with-icon__beside product-tag__text">
+        {{ tag_text }}
       </span>
     </div>
   {% endif %}
 </div>
 
 <style>
-  .sold-tag-container {
+  .product-tag-container {
     margin: 1rem 0;
   }
 
-  .sold-tag {
+  .product-tag {
     display: inline-flex;
     align-items: center;
     color: var(--product-label-overlay-stock-text);
@@ -50,6 +61,7 @@
     padding: 0.75rem 0;
   }
 
+  /* Sold tag styling */
   .product-label--sold > span {
     background: var(--product-label-overlay-stock-bg);
     color: var(--product-label-overlay-stock-text);
@@ -58,22 +70,37 @@
     font-size: var(--base-text-size);
   }
 
-  .sold-tag .icon-container,
-  .product-label--sold .icon-container {
+  /* Custom sourced tag styling */
+  .product-label--custom_sourced > span {
+    background: var(--product-label-overlay-new-bg);
+    color: var(--product-label-overlay-new-text);
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--base-text-size);
+  }
+
+  .product-tag .icon-container,
+  .product-label--sold .icon-container,
+  .product-label--custom_sourced .icon-container {
     display: flex;
     align-items: center;
     margin-right: 8px;
   }
 
-  .sold-tag .icon {
+  .product-tag .icon {
     vertical-align: top;
   }
 
-  .sold-tag .icon .svg-part-circle {
+  .product-tag .icon .svg-part-circle {
     fill: rgb(var(--body-bg-color, 255, 255, 255));
   }
 
-  .sold-tag__text {
+  .product-tag__text {
     font-weight: inherit;
+  }
+
+  /* Custom sourced specific styling for non-boxed version */
+  .product-tag.custom-sourced {
+    color: var(--product-label-overlay-new-text);
   }
 </style>
