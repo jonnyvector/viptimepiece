@@ -12,6 +12,14 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "sold_tag_q4D4KV": {
+          "type": "sold-tag",
+          "settings": {
+            "tag_type": "custom_sourced",
+            "custom_text": "",
+            "enable_box": true
+          }
+        },
         "title": {
           "type": "title",
           "settings": {}
@@ -112,6 +120,7 @@
         }
       },
       "block_order": [
+        "sold_tag_q4D4KV",
         "title",
         "sku_xqXaww",
         "price",
