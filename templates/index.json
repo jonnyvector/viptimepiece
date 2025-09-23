@@ -14,6 +14,7 @@
       "blocks": {
         "f4f40ab9-fae9-4678-a2c6-87b948341ae0": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Hublot"
           }
@@ -39,7 +40,7 @@
           "type": "button",
           "settings": {
             "button_label": "Browse our collection",
-            "button_link": "shopify://collections/hublot",
+            "button_link": "shopify://collections/all",
             "button_style": "secondary"
           }
         }
