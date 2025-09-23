@@ -15,13 +15,11 @@
         assign tag_text = 'Sold'
       endif
       assign tag_icon = 'check_mark_in_circle'
-      assign use_icon_snippet = false
     when 'custom_sourced'
       if tag_text == blank
         assign tag_text = 'Custom Sourced'
       endif
-      assign tag_icon = 'search'
-      assign use_icon_snippet = true
+      assign tag_icon = 'star'
   endcase
 -%}
 
@@ -30,13 +28,7 @@
     <span class="product-label product-label--{{ tag_type }} with-icon">
       <span>
         <div class="icon-container">
-          <span class="product-tag__icon">
-            {%- if use_icon_snippet -%}
-              {%- render 'icon-search' -%}
-            {%- else -%}
-              {%- render 'icon', icon: tag_icon, size: 'small' -%}
-            {%- endif -%}
-          </span>
+          <span class="product-tag__icon">{%- render 'icon', icon: tag_icon, size: 'small' -%}</span>
         </div>
         <span class="with-icon__beside">
           {{ tag_text }}
@@ -46,13 +38,7 @@
   {% else %}
     <div class="product-tag with-icon">
       <div class="icon-container">
-        <span class="product-tag__icon">
-          {%- if use_icon_snippet -%}
-            {%- render 'icon-search' -%}
-          {%- else -%}
-            {%- render 'icon', icon: tag_icon, size: 'small' -%}
-          {%- endif -%}
-        </span>
+        <span class="product-tag__icon">{%- render 'icon', icon: tag_icon, size: 'small' -%}</span>
       </div>
       <span class="with-icon__beside product-tag__text">
         {{ tag_text }}
