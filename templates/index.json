@@ -81,7 +81,7 @@
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/lifetime_1.svg",
-            "title": "Lifetime Warranty",
+            "title": "1-Year Warranty",
             "text": "<p>Each piece is guaranteed for life, we promise.</p>",
             "button_label": "",
             "link": ""
