@@ -72,6 +72,7 @@
         "21558aaf-7983-4c39-a2d9-5e803d85df82": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ahsan-khan-XDTnKDj9yCg-unsplash_1.jpg",
             "image_position_desktop": "right",
             "image_position_mobile": "top"
           }
