@@ -370,6 +370,15 @@
     "logo_list_ADfK88": {
       "type": "logo-list",
       "blocks": {
+        "logo_HxftRL": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Breitling-Logo-1.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
         "logo_83J8ay": {
           "type": "logo",
           "settings": {
@@ -462,6 +471,7 @@
         }
       },
       "block_order": [
+        "logo_HxftRL",
         "logo_83J8ay",
         "logo_BDViEc",
         "logo_8fKGGf",
