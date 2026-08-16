@@ -119,6 +119,7 @@
     "coll_text_position_under_mobile": false,
     "coll_thumb_text_align_x": "left",
     "coll_thumb_text_align_y": "bottom",
+    "favicon": "shopify://shop_images/VIP_Timepiece_Favicon_180x180_aff3f366-dc8a-4ee2-b573-2ee46666ba96.png",
     "animations_enabled_desktop": true,
     "cart_type": "drawer",
     "after_add_to_cart": "drawer",
