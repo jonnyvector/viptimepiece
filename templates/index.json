@@ -490,6 +490,28 @@
         "color_scheme": "default"
       }
     },
+    "rich_text_RMQJbR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_QEhNDJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>VIP Timepiece in not an authorized dealer for the brands listed. We offer guaranteed authentic previously loved timepieces backed by existing manufacturer warranty or our 12-month in house warranty</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "text_QEhNDJ"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
     "rich_text_VQptLb": {
       "type": "rich-text",
       "blocks": {
@@ -547,6 +569,7 @@
     "gallery_g99hPx",
     "16117511238528a364",
     "logo_list_ADfK88",
+    "rich_text_RMQJbR",
     "rich_text_VQptLb"
   ]
 }
